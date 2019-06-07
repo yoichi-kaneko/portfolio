@@ -40,7 +40,7 @@
         </ul>
     </div>
     <div class="layout-50-right">
-        <h3>言語・ツール等</h3>
+        <h3>言語・フレームワーク等</h3>
 @foreach ($skills['program'] as $skill)
         <ul class="skill-list no-list">
             <li>
@@ -74,8 +74,5 @@
         </ul>
 @endforeach
 
-        </ul>
-
-        </ul>
     </div>
 </div>
