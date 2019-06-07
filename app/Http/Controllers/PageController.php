@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Work;
+use App\Models\Skill;
 
 class PageController extends Controller
 {
@@ -20,9 +21,11 @@ class PageController extends Controller
     public function resume()
     {
         $works = Work::orderBy('id', 'asc')->get();
+        $skills = Skill::get_by_each_types();
 
         return view('page/resume')->with([
-            'works' => $works
+            'works' => $works,
+            'skills' => $skills
         ]);
     }
 

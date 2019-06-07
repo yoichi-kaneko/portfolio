@@ -31,7 +31,7 @@ class SkillsSeeder extends Seeder
                 'description' => '3年'
             ],
             [
-                'type' => 'job',
+                'type' => 'position',
                 'name' => 'コーディング',
                 'grade' => 5,
                 'description' => '10年'

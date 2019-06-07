@@ -40,131 +40,42 @@
         </ul>
     </div>
     <div class="layout-50-right">
-        <h3>Photography</h3>
+        <h3>言語・ツール等</h3>
+@foreach ($skills['program'] as $skill)
         <ul class="skill-list no-list">
             <li>
-                <h5>Photography</h5>
+                <h5>{{ $skill->name }}</h5>
                 <div class="skill-list-item-level">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="skill-list-item-level-off"></span>
+@for ($i = 1; $i <= 5; $i++)
+                    <span @if($i > $skill->grade)class="skill-list-item-level-off"@endif></span>
+@endfor
                 </div>
                 <div class="skill-list-item-period">
-                    5 years experience
+                    {{ $skill->description }}
                 </div>
             </li>
         </ul>
-        <h3 class="margin-top-30">Design</h3>
+@endforeach
+
+        <h3 class="margin-top-30">役割</h3>
+@foreach ($skills['position'] as $skill)
         <ul class="skill-list no-list">
             <li>
-                <h5>Web design</h5>
+                <h5>{{ $skill->name }}</h5>
                 <div class="skill-list-item-level">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+@for ($i = 1; $i <= 5; $i++)
+                    <span @if($i > $skill->grade)class="skill-list-item-level-off"@endif></span>
+@endfor
                 </div>
                 <div class="skill-list-item-period">
-                    4 years experience
-                </div>
-            </li>
-            <li>
-                <h5>Logo Design</h5>
-                <div class="skill-list-item-level">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="skill-list-item-level-off"></span>
-                </div>
-                <div class="skill-list-item-period">
-                    4 years experience
-                </div>
-            </li>
-            <li>
-                <h5>Graphic Design</h5>
-                <div class="skill-list-item-level">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="skill-list-item-period">
-                    5 years experience
-                </div>
-            </li>
-            <li>
-                <h5>Print Design</h5>
-                <div class="skill-list-item-level">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="skill-list-item-period">
-                    5 years experience
+                    {{ $skill->description }}
                 </div>
             </li>
         </ul>
-        <h3 class="margin-top-30">Coding &amp; Programming</h3>
-        <ul class="skill-list no-list">
-            <li>
-                <h5>HTML/XHTML</h5>
-                <div class="skill-list-item-level">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="skill-list-item-level-off"></span>
-                </div>
-                <div class="skill-list-item-period">
-                    3 years experience
-                </div>
-            </li>
-            <li>
-                <h5>CSS2/CSS3</h5>
-                <div class="skill-list-item-level">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="skill-list-item-level-off"></span>
-                    <span class="skill-list-item-level-off"></span>
-                </div>
-                <div class="skill-list-item-period">
-                    2 years experience
-                </div>
-            </li>
-            <li>
-                <h5>jQuery</h5>
-                <div class="skill-list-item-level">
-                    <span></span>
-                    <span></span>
-                    <span class="skill-list-item-level-off"></span>
-                    <span class="skill-list-item-level-off"></span>
-                    <span class="skill-list-item-level-off"></span>
-                </div>
-                <div class="skill-list-item-period">
-                    1 year experience
-                </div>
-            </li>
-            <li>
-                <h5>PHP</h5>
-                <div class="skill-list-item-level">
-                    <span></span>
-                    <span></span>
-                    <span class="skill-list-item-level-off"></span>
-                    <span class="skill-list-item-level-off"></span>
-                    <span class="skill-list-item-level-off"></span>
-                </div>
-                <div class="skill-list-item-period">
-                    1 year experience
-                </div>
-            </li>
+@endforeach
+
+        </ul>
+
         </ul>
     </div>
 </div>
