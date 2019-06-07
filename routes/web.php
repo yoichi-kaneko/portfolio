@@ -10,5 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/page/about', 'PageController@about');
 Route::get('/', 'IndexController@index');
+

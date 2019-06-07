@@ -2,7 +2,7 @@ var page={
         "about": {
             "js": "page-1.js",
             "tab": "tab-1",
-            "html": "page-1.html",
+            "html": "about",
             "main": 1,
             "title": "Cascade - Personal vCard Template - About Page"
         },
