@@ -1,6 +1,6 @@
 <div class="layout-50 page-3">
     <div class="layout-50-left">
-        <h3>職歴</h3>
+        <h3>学歴</h3>
         <ul class="career-list no-list">
             <li>
                 <h5>東京理科大学</h5>
@@ -17,34 +17,26 @@
                 </p>
             </li>
         </ul>
-        <h3 class="margin-top-30">Work Experience</h3>
+        <h3 class="margin-top-30">職歴</h3>
         <ul class="career-list no-list">
+@foreach ($works as $work)
             <li>
-                <h5>Senior Developer</h5>
+                <h5>{{ $work->name }}</h5>
                 <p>
-                    Period: 03-2008 - 09-2010<br/>
-                    Job type: Full-Time<br/>
-                    References: Joe Doe
+                    在籍期間: {{ $work->date_from->format('Y/m') }} -
+    @empty($work->date_to)
+                    now
+    @else
+                    {{ $work->date_to->format('Y/m') }}
+    @endempty
+                    <br/>
+                    雇用形態: {{ $work->job_type }}
                 </p>
                 <p>
-                    Nunc gravida accumsan nunc, at pellentesque lectus iaculis sed.
-                    Nullam eget eros sapien, ac scelerisque orci.
-                    Curabitur vel massa a metus aliquam ultricies sit amet scelerisque neque
+                    {{ $work->description }}
                 </p>
             </li>
-            <li>
-                <h5>Web designer</h5>
-                <p>
-                    Period: 06-2006 - 02-2008<br/>
-                    Job type: Full-Time<br/>
-                    References: Joe Doe
-                </p>
-                <p class="padding-bottom-0 margin-bottom-0">
-                    Cras at libero sit amet felis cursus blandit.<br/>
-                    Nulla at placerat dolor. In nec magna ut magna hendrerit adipiscing id vel arcu.
-                    Sed placerat, ullamcorper dictum, nunc arcu faucibus tellus, amet placerat odio mi commodo tortor.
-                </p>
-            </li>
+@endforeach
         </ul>
     </div>
     <div class="layout-50-right">

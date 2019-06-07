@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Work;
 
 class PageController extends Controller
 {
@@ -18,7 +19,11 @@ class PageController extends Controller
 
     public function resume()
     {
-        return view('page/resume');
+        $works = Work::orderBy('id', 'asc')->get();
+
+        return view('page/resume')->with([
+            'works' => $works
+        ]);
     }
 
     public function private()
