@@ -1,61 +1,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
     <head>
-
         <title>Cascade - Personal vCard Template</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
         <meta name="keywords" content="black, clean, creative, curriculum, curriculum vitae, cv, dark, minimalist, personal, personal profile, personal vcard, portfolio, resume, vcard, virtual card"/>
         <meta name="description" content="Cascade is a minimalist personal vCard template based on four vertical menu tabs. The first tab is a typical descriptive about page with slider, the second is a gallery with build-in lightbox, next tab is a personal info page and the last tab is the contact page with working form."/>
 
-        <link rel="stylesheet" type="text/css" href="css/nivo-slider.css"/>
-        <link rel="stylesheet" type="text/css" href="css/jquery.qtip.css"/>
-        <link rel="stylesheet" type="text/css" href="css/jquery.captify.css"/>
-        <link rel="stylesheet" type="text/css" href="css/jquery.jScrollPane.css"/>
-        <link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox.css"/>
-        <link rel="stylesheet" type="text/css" href="css/fancybox/helpers/jquery.fancybox-buttons.css"/>
-        <link rel="stylesheet" type="text/css" href="css/base.css"/>
-        <link rel="stylesheet" type="text/css" href="css/page.css"/>
+        {{Html::style('css/nivo-slider.css')}}
+        {{Html::style('css/jquery.qtip.css')}}
+        {{Html::style('css/jquery.captify.css')}}
+        {{Html::style('css/jquery.jScrollPane.css')}}
+        {{Html::style('css/fancybox/jquery.fancybox.css')}}
+        {{Html::style('css/fancybox/helpers/jquery.fancybox-buttons.css')}}
+        {{Html::style('css/base.css')}}
+        {{Html::style('css/page.css')}}
+
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300"/>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Share" />
 
-        <link rel="stylesheet" type="text/css" media="screen and (min-width:0px) and (max-width:959px)" href="css/responsive/width-0-959.css"/>
-        <link rel="stylesheet" type="text/css" media="screen and (min-width:0px) and (max-width:767px)" href="css/responsive/width-0-767.css"/>
-        <link rel="stylesheet" type="text/css" media="screen and (min-width:480px) and (max-width:959px)" href="css/responsive/width-480-959.css"/>
+        {{Html::style('css/responsive/width-0-959.css', ['media' => 'screen and (min-width:0px) and (max-width:959px)'])}}
+        {{Html::style('css/responsive/width-0-767.css', ['media' => 'screen and (min-width:0px) and (max-width:767px)'])}}
+        {{Html::style('css/responsive/width-480-959.css', ['media' => 'screen and (min-width:480px) and (max-width:959px)'])}}
 
-        <link rel="stylesheet" type="text/css" media="screen and (min-width:768px) and (max-width:959px)" href="css/responsive/width-768-959.css"/>
-        <link rel="stylesheet" type="text/css" media="screen and (min-width:480px) and (max-width:767px)" href="css/responsive/width-480-767.css"/>
-        <link rel="stylesheet" type="text/css" media="screen and (min-width:0px) and (max-width:479px)" href="css/responsive/width-0-479.css"/>
+        {{Html::style('css/responsive/width-768-959.css', ['media' => 'screen and (min-width:768px) and (max-width:959px)'])}}
+        {{Html::style('css/responsive/width-480-767.css', ['media' => 'screen and (min-width:480px) and (max-width:767px)'])}}
+        {{Html::style('css/responsive/width-0-479.css', ['media' => 'screen and (min-width:0px) and (max-width:479px)'])}}
 
         <script type="text/javascript">
             var mainURL='';
         </script>
 
-        <script type="text/javascript" src="js/linkify.js"></script>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.js"></script>
-        <script type="text/javascript" src="js/jquery.isotope.js"></script>
-        <script type="text/javascript" src="js/jquery.captify.js"></script>
-        <script type="text/javascript" src="js/jquery.blockUI.js"></script>
-        <script type="text/javascript" src="js/jquery.qtip.min.js"></script>
-        <script type="text/javascript" src="js/jquery.ba-bqq.min.js"></script>
-        <script type="text/javascript" src="js/jquery.jScrollPane.js"></script>
-        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-        <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
-        <script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script>
-        <script type="text/javascript" src="js/jquery.carouFredSel.packed.js"></script>
+        {{Html::script('js/linkify.js')}}
+        {{Html::script('js/jquery.min.js')}}
+        {{Html::script('js/jquery-migrate.min.js')}}
+        {{Html::script('js/jquery.easing.js')}}
+        {{Html::script('js/jquery.isotope.js')}}
+        {{Html::script('js/jquery.captify.js')}}
+        {{Html::script('js/jquery.blockUI.js')}}
+        {{Html::script('js/jquery.qtip.min.js')}}
+        {{Html::script('js/jquery.ba-bqq.min.js')}}
+        {{Html::script('js/jquery.jScrollPane.js')}}
+        {{Html::script('js/jquery.mousewheel.min.js')}}
+        {{Html::script('js/jquery.nivo.slider.pack.js')}}
+        {{Html::script('js/jquery.infieldlabel.min.js')}}
+        {{Html::script('js/jquery.carouFredSel.packed.js')}}
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
-        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
-        <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
-        <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
+        {{Html::script('js/jquery.fancybox.js')}}
+        {{Html::script('js/jquery.fancybox-media.js')}}
+        {{Html::script('js/jquery.fancybox-buttons.js')}}
 
-        <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/cascade.js"></script>
+        {{Html::script('js/script.js')}}
+        {{Html::script('js/cascade.js')}}
 
     </head>
 
@@ -115,7 +112,7 @@
                         </a>
                     </li>
                     <li id="tab-4" class="green-people">
-                        <a href="#!interests">
+                        <a href="#!private">
                             <span class="title">My Interests</span>
                             <span class="subtitle">Free time</span>
                         </a>
@@ -191,7 +188,7 @@
 
         </div>
         <!-- /Footer -->
-        <script type="text/javascript" src="js/page_config.js"></script>
+        {{Html::script('js/page_config.js')}}
         <script type="text/javascript">
             $(document).ready(function()
             {
