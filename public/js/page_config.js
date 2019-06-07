@@ -9,28 +9,28 @@ var page={
         "portfolio": {
             "js": "page-2.js",
             "tab": "tab-2",
-            "html": "page-2.html",
+            "html": "portfolio",
             "main": 1,
             "title": "Cascade - Personal vCard Template - Portfolio Page"
         },
         "resume": {
             "js": "page-3.js",
             "tab": "tab-3",
-            "html": "page-3.html",
+            "html": "resume",
             "main": 1,
             "title": "Cascade - Personal vCard Template - Resume Page"
         },
         "interests": {
             "js": "page-4.js",
             "tab": "tab-4",
-            "html": "page-4.html",
+            "html": "private",
             "main": 1,
             "title": "Cascade - Personal vCard Template - Interests Page"
         },
         "contact": {
             "js": "page-5.js",
             "tab": "tab-5",
-            "html": "page-5.html",
+            "html": "contact",
             "main": 1,
             "title": "Cascade - Personal vCard Template - Contact Page"
         }

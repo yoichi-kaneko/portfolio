@@ -10,4 +10,24 @@ class PageController extends Controller
     {
         return view('page/about');
     }
+
+    public function portfolio()
+    {
+        return view('page/portfolio');
+    }
+
+    public function resume()
+    {
+        return view('page/resume');
+    }
+
+    public function private()
+    {
+        return view('page/private');
+    }
+
+    public function contact()
+    {
+        return view('page/contact');
+    }
 }

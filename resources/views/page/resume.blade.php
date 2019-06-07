@@ -1,7 +1,5 @@
 <div class="layout-50 page-3">
-
     <div class="layout-50-left">
-
         <h3>Education</h3>
         <ul class="career-list no-list">
             <li>
@@ -17,9 +15,8 @@
                     Period: 1997 - 2001<br/>
                     Qualification: A Level
                 </p>
-            </li>			
+            </li>
         </ul>
-
         <h3 class="margin-top-30">Work Experience</h3>
         <ul class="career-list no-list">
             <li>
@@ -30,8 +27,8 @@
                     References: Joe Doe
                 </p>
                 <p>
-                    Nunc gravida accumsan nunc, at pellentesque lectus iaculis sed. 
-                    Nullam eget eros sapien, ac scelerisque orci. 
+                    Nunc gravida accumsan nunc, at pellentesque lectus iaculis sed.
+                    Nullam eget eros sapien, ac scelerisque orci.
                     Curabitur vel massa a metus aliquam ultricies sit amet scelerisque neque
                 </p>
             </li>
@@ -40,20 +37,17 @@
                 <p>
                     Period: 06-2006 - 02-2008<br/>
                     Job type: Full-Time<br/>
-                    References: Joe Doe				
+                    References: Joe Doe
                 </p>
                 <p class="padding-bottom-0 margin-bottom-0">
                     Cras at libero sit amet felis cursus blandit.<br/>
                     Nulla at placerat dolor. In nec magna ut magna hendrerit adipiscing id vel arcu.
                     Sed placerat, ullamcorper dictum, nunc arcu faucibus tellus, amet placerat odio mi commodo tortor.
                 </p>
-            </li>		
-        </ul>			
-
+            </li>
+        </ul>
     </div>
-
     <div class="layout-50-right">
-
         <h3>Photography</h3>
         <ul class="skill-list no-list">
             <li>
@@ -70,7 +64,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="margin-top-30">Design</h3>
         <ul class="skill-list no-list">
             <li>
@@ -95,7 +88,6 @@
                     <span></span>
                     <span class="skill-list-item-level-off"></span>
                 </div>
-
                 <div class="skill-list-item-period">
                     4 years experience
                 </div>
@@ -112,7 +104,7 @@
                 <div class="skill-list-item-period">
                     5 years experience
                 </div>
-            </li>	
+            </li>
             <li>
                 <h5>Print Design</h5>
                 <div class="skill-list-item-level">
@@ -125,10 +117,8 @@
                 <div class="skill-list-item-period">
                     5 years experience
                 </div>
-            </li>		
-
-        </ul>	
-
+            </li>
+        </ul>
         <h3 class="margin-top-30">Coding &amp; Programming</h3>
         <ul class="skill-list no-list">
             <li>
@@ -183,8 +173,6 @@
                     1 year experience
                 </div>
             </li>
-        </ul>		
-
+        </ul>
     </div>
-
 </div>
