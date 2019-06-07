@@ -1,19 +1,19 @@
 <div class="layout-50 page-3">
     <div class="layout-50-left">
-        <h3>Education</h3>
+        <h3>職歴</h3>
         <ul class="career-list no-list">
             <li>
-                <h5>Oxford University</h5>
+                <h5>東京理科大学</h5>
                 <p>
-                    Period: 2001 - 2006<br/>
-                    Qualification: Bachelor of Eductaion (Arts)
+                    2000 - 2005<br/>
+                    基礎工学部　電子応用工学科
                 </p>
             </li>
             <li>
-                <h5>North Hill High School</h5>
+                <h5>筑波大学大学院</h5>
                 <p class="padding-bottom-0 margin-bottom-0">
-                    Period: 1997 - 2001<br/>
-                    Qualification: A Level
+                    2006 - 2007<br/>
+                    システム情報工学研究科<br/>コンピュータサイエンス専攻
                 </p>
             </li>
         </ul>
