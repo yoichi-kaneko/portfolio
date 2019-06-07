@@ -17,9 +17,9 @@ class WorksTable extends Migration
             $table->increments('id');
             $table->string('name', 100);
             $table->date('date_from');
-            $table->date('date_to');
+            $table->date('date_to')->nullable();
             $table->string('job_type', 20);
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -32,6 +32,6 @@ class WorksTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('works');
     }
 }
