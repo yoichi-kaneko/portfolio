@@ -26,13 +26,6 @@ var page={
             "html": "private",
             "main": 1,
             "title": "Cascade - Personal vCard Template - Interests Page"
-        },
-        "contact": {
-            "js": "",
-            "tab": "tab-5",
-            "html": "contact",
-            "main": 1,
-            "title": "Cascade - Personal vCard Template - Contact Page"
         }
     };
 

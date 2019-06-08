@@ -117,12 +117,6 @@
                             <span class="subtitle">Free time</span>
                         </a>
                     </li>
-                    <li id="tab-5" class="red-mail">
-                        <a href="#!contact">
-                            <span class="title">Contact</span>
-                            <span class="subtitle">Get In Touch</span>
-                        </a>
-                    </li>
                 </ul>
                 <!-- /Box menu -->
 
