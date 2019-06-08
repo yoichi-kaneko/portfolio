@@ -1,4 +1,4 @@
 #!/bin/bash
-git pull
+sudo git pull
 php artisan migrate --force
 php artisan db:seed --force
