@@ -15,5 +15,6 @@ Route::get('/page/portfolio', 'PageController@portfolio');
 Route::get('/page/resume', 'PageController@resume');
 Route::get('/page/private', 'PageController@private');
 Route::get('/page/contact', 'PageController@contact');
+Route::get('/portfolio/{id}', 'PortfolioController@detail');
 Route::get('/', 'IndexController@index');
 

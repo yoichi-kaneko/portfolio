@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+# use Illuminate\Http\Request;
 use App\Models\Work;
 use App\Models\Skill;
+use App\Models\Portfolio;
 
 class PageController extends Controller
 {
@@ -15,7 +16,10 @@ class PageController extends Controller
 
     public function portfolio()
     {
-        return view('page/portfolio');
+        $portfolios = Portfolio::orderBy('id', 'desc')->where(['visible' => true])->get();
+        return view('page/portfolio')->with([
+            'portfolios' => $portfolios
+        ]);
     }
 
     public function resume()
