@@ -23,13 +23,21 @@ $('#slider').nivoSlider({directionNav:false});
 /******************************************************************************/
 
 var helpers={title:{type:'inside'}};
-helpers.buttons={skipSingle:true};	
+helpers.buttons = {
+    skipSingle: false,
+};
 
 $('.fancybox-image').fancybox(
 {	
 	type					:	'image',
 	helpers					:	helpers
 });
+$('.fancybox-iframe').fancybox(
+    {
+        type: 'ajax',
+        arrows: false
+        // helpers					:	helpers
+    });
 
 /******************************************************************************/
 /*	Fancybox for youtube videos												  */

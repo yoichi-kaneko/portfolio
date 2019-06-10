@@ -3,8 +3,7 @@
         <ul class="no-list gallery-list clear-fix">
             @foreach ($portfolios as $portfolio)
                 <li class="@if($loop->index % 3 == 0) left @elseif($loop->index % 3 == 1) center @else right @endif filter-filter-1">
-                    <a href="{{ asset('/image/_sample/gallery_img4.jpg') }}/" class="fancybox-image image-preloader"
-                       rel="gallery">
+                    <a class="fancybox-iframe image-preloader" href="{{ asset('/portfolio/' . $portfolio->id) }}/">
                         <img src="/image/thumb/{{ $portfolio->code }}.jpg" alt="{{ $portfolio->name }}"/>
                 </a>
             </li>

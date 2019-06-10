@@ -9,8 +9,8 @@ class PortfolioController extends Controller
 {
     public function detail($id)
     {
-        echo $id;
-        die;
-        // return view('page/about');
+        // echo $id;
+        // die;
+        return view('portfolio/first_ec_site');
     }
 }
