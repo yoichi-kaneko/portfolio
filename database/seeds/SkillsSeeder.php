@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class SkillsSeeder extends Seeder
 {
@@ -68,6 +69,12 @@ class SkillsSeeder extends Seeder
             ],
             [
                 'type' => 'program',
+                'name' => 'Wordpress',
+                'grade' => 3,
+                'description' => '3年'
+            ],
+            [
+                'type' => 'program',
                 'name' => 'PostgreSQL',
                 'grade' => 3,
                 'description' => '2年'
@@ -125,6 +132,12 @@ class SkillsSeeder extends Seeder
                 'name' => '保守',
                 'grade' => 4,
                 'description' => '6年'
+            ],
+            [
+                'type' => 'position',
+                'name' => 'プロジェクトコントロール',
+                'grade' => 4,
+                'description' => '7年'
             ],
         ];
     }

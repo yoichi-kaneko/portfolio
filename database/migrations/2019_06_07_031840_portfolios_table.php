@@ -13,7 +13,14 @@ class PortfoliosTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('portfolios', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('code', 30);
+            $table->string('name', 30);
+            $table->boolean('visible')->default(true);
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
     /**
@@ -23,6 +30,6 @@ class PortfoliosTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('portfolios');
     }
 }
