@@ -310,15 +310,14 @@ img
 
 	.layout-4060-left 
 	{
-		width:39%; 
+        width: 43%;
 		clear:both;
 		float:left; 
 	}
 
-	.layout-4060-right 
-	{ 
-		width:59%;
-		float:right; 
+.layout-4060-right {
+    width: 57%;
+    float: right;
 	}
 
 	/**************************************************************************/
