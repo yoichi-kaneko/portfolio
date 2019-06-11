@@ -28,7 +28,7 @@
         <li class="feature-list-icon-kosenjo">
             <h3>ソシャゲ</h3>
             <p>
-                Text
+                Tex　x
             </p>
         </li>
     </ul>
