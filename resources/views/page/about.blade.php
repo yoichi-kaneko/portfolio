@@ -2,33 +2,31 @@
     <h3>About</h3>
     <div class="layout-50-left">
         <p class="top-0">
-            Proin eu eros ut neque mattis facilisis in sit amet turpis.
-            Aenean vitae malesuada libero.
-            Mauris in risus vitae nibh pulvinar eleifend lacinia sit amet nulla.
-            Integer adipiscing varius dapibus. Donec erat mi, aliquet placerat pulvinar vel.
+            ポートフォリオを見ていただきありがとうございます、金子陽一と申します。
+            10年ほど正社員としてシステム開発に従事した後、独立してフリーランスとなりました。
             <br/><br/>
-            Fusce aliquam dignissim metus vel faucibus.
-            Aenean sed sem felis, vitae laoreet lacus.
-            Mauris in nibh eu quam aliquet aliquam imperdiet ac est.
-            Nunc placerat vulputate placerat.
+            これまでに関わった案件は大半がwebのシステムで、言語はPHPを使用してきました。
+            その間に多くのフレームワークを使用し、開発工程や担当領域も多岐に渡っています。
+            その他、Rubyの使用経験もございます。
+            これらの詳細はポートフォリオやレジュメページで実績を見ていただければと思います。
         </p>
         <ul class="no-list social-list-2">
-            <li class="social-twitter paragraph">
-                <span>Twitter Profile</span>
-                <a href="http://twitter.com/anna.brown">twitter.com/anna.b</a>
+            <li class="social-line paragraph">
+                <span>Line Profile</span>
+                <a href="https://line.me/ti/p/T9TnFitaez">straysheep_54</a>
             </li>
-            <li class="social-facebook paragraph">
-                <span>Facebook Profile</span>
-                <a href="http://facebook.com/anna.brown">facebook.com/anna.b</a>
+            <li class="social-skype paragraph">
+                <span>Skype Profile</span>
+                <a href="http://facebook.com/anna.brown">yoichi_kaneko</a>
             </li>
         </ul>
     </div>
     <div class="layout-50-right">
         <div id="sliderBox">
             <div id="slider">
-                <img src="image/_sample/slider_img1.jpg" alt="" />
-                <img src="image/_sample/slider_img2.jpg" alt="" />
-                <img src="image/_sample/slider_img3.jpg" alt="" />
+                <img src="{{ asset('/image/_sample/slider_img1.jpg') }}" alt=""/>
+                <img src="{{ asset('/image/_sample/slider_img2.jpg') }}" alt=""/>
+                <img src="{{ asset('/image/_sample/slider_img3.jpg') }}" alt=""/>
             </div>
         </div>
     </div>

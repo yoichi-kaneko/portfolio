@@ -572,7 +572,7 @@ ul.no-list
 	{
 		opacity:0;
 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-		#filter:alpha(opacity=0);
+        /* #filter:alpha(opacity=0); */
 	}
 
 /******************************************************************************/
@@ -721,14 +721,30 @@ input.button
 
 			ul.social-list-2 li.social-rss			{ background-image:url('../image/social-icon/about_icon_rss.png');			}		
 			ul.social-list-2 li.social-xing			{ background-image:url('../image/social-icon/about_icon_xing.png');			}
-			ul.social-list-2 li.social-skype		{ background-image:url('../image/social-icon/about_icon_skype.png');		}
+
+ul.social-list-2 li.social-skype {
+    background-image: url('../image/social-icon/icon_skype.png');
+}
 			ul.social-list-2 li.social-flickr		{ background-image:url('../image/social-icon/about_icon_flickr.png');		}
 			ul.social-list-2 li.social-google		{ background-image:url('../image/social-icon/about_icon_google.png');		}	
 			ul.social-list-2 li.social-twitter		{ background-image:url('../image/social-icon/about_icon_twitter.png');		}
 			ul.social-list-2 li.social-facebook		{ background-image:url('../image/social-icon/about_icon_facebook.png');		}
-			ul.social-list-2 li.social-linkedin		{ background-image:url('../image/social-icon/about_icon_linkedin.png');		}		
-			ul.social-list-2 li.social-wordpress	{ background-image:url('../image/social-icon/about_icon_wordpress.png');	}		
-			ul.social-list-2 li.social-soundcloud	{ background-image:url('../image/social-icon/about_icon_soundcloud.png');	}		
+
+ul.social-list-2 li.social-linkedin {
+    background-image: url('../image/social-icon/about_icon_linkedin.png');
+}
+
+ul.social-list-2 li.social-wordpress {
+    background-image: url('../image/social-icon/about_icon_wordpress.png');
+}
+
+ul.social-list-2 li.social-soundcloud {
+    background-image: url('../image/social-icon/about_icon_soundcloud.png');
+}
+
+ul.social-list-2 li.social-line {
+    background-image: url('../image/social-icon/icon_line.png');
+}
 
 				ul.social-list-2 li a,
 				ul.social-list-2 li span
