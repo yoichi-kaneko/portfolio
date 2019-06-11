@@ -303,6 +303,10 @@ ul.feature-list li.feature-list-icon-swarm p {
     background-image: url('../image/feature-icon/icon_swarm.png');
 }
 
+ul.feature-list li.feature-list-icon-untappd p {
+    background-image: url('../image/feature-icon/icon_untappd.png');
+}
+
 ul.feature-list li.feature-list-icon-torii p {
     background-image: url('../image/feature-icon/icon_torii.png');
 }
@@ -311,3 +315,6 @@ ul.feature-list li.feature-list-icon-mountain p {
     background-image: url('../image/feature-icon/icon_mountain.png');
 }
 
+ul.feature-list li.feature-list-icon-kosenjo p {
+    background-image: url('../image/feature-icon/icon_kosenjo.png');
+}
