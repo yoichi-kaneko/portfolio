@@ -22,12 +22,12 @@ var page={
         "main": 1,
         "title": title + " - Resume"
     },
-    "interests": {
+    "private": {
         "js": "",
         "tab": "tab-4",
         "html": "private",
         "main": 1,
-        "title": title + " - Interests"
+        "title": title + " - Private"
     }
 };
 

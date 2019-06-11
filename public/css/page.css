@@ -217,7 +217,7 @@
                         background-position:0px -16px;
                         background-image:url('../image/skill_icon.png');
                         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-                        #filter:alpha(opacity=0);
+                        /* #filter:alpha(opacity=0); */
                     }
 
                     ul.skill-list li div.skill-list-item-level span:first-child
@@ -312,3 +312,16 @@
 		ul.feature-list li.feature-list-icon-users p		{ background-image:url('../image/feature-icon/icon_users.png');		}
 		ul.feature-list li.feature-list-icon-basket	p		{ background-image:url('../image/feature-icon/icon_basket.png');	}
 		ul.feature-list li.feature-list-icon-briefcase p	{ background-image:url('../image/feature-icon/icon_briefcase.png'); }
+
+ul.feature-list li.feature-list-icon-swarm p {
+    background-image: url('../image/feature-icon/icon_swarm.png');
+}
+
+ul.feature-list li.feature-list-icon-torii p {
+    background-image: url('../image/feature-icon/icon_torii.png');
+}
+
+ul.feature-list li.feature-list-icon-mountain p {
+    background-image: url('../image/feature-icon/icon_mountain.png');
+}
+

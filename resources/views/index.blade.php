@@ -106,7 +106,7 @@
                     </li>
                     <li id="tab-4" class="turquoise-arrow">
                         <a href="#!private">
-                            <span class="title">My Interests</span>
+                            <span class="title">My Private</span>
                             <span class="subtitle">Free time</span>
                         </a>
                     </li>
