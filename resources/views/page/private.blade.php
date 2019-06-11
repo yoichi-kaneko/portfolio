@@ -28,8 +28,7 @@
         <li class="feature-list-icon-kosenjo">
             <h3>ソシャゲ</h3>
             <p>
-                Proin accumsan pretium suscipit torte. Pellentesque euismod tincidunt cursus.
-                Etiam erat neque, rhoncus at euismod.
+                Text
             </p>
         </li>
     </ul>
