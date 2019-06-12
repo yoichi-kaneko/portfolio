@@ -15,7 +15,8 @@ class DatabaseSeeder extends Seeder
             [
                 WorksSeeder::class,
                 SkillsSeeder::class,
-                PortfoliosSeeder::class
+                PortfoliosSeeder::class,
+                FreetimesSeeder::class
             ]
         );
     }

@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Models\Work;
 use App\Models\Skill;
 use App\Models\Portfolio;
+use App\Models\Freetime;
 
 class PageController extends Controller
 {
@@ -35,7 +36,10 @@ class PageController extends Controller
 
     public function private()
     {
-        return view('page/private');
+        $freetimes = Freetime::orderBy('id', 'asc')->get();
+        return view('page/private')->with([
+            'freetimes' => $freetimes
+        ]);
     }
 
     public function contact()
