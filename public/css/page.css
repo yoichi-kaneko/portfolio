@@ -318,3 +318,21 @@ ul.feature-list li.feature-list-icon-mountain p {
 ul.feature-list li.feature-list-icon-kosenjo p {
     background-image: url('../image/feature-icon/icon_kosenjo.png');
 }
+
+/**************************************************************************/
+/* Portfolio List                                                           */
+/**************************************************************************/
+div.fancybox-inner h2 {
+    font-size: 20pt;
+    color: #444444;
+}
+
+div.fancybox-inner h3 {
+    font-size: 16pt;
+    color: #444444;
+}
+
+div.fancybox-inner ul {
+    list-style-type: square;
+    margin-left: 20px;
+}

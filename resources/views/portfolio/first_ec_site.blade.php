@@ -1,24 +1,24 @@
-<h2>About</h2>
-<div class="layout-50-left">
+<h2>ECサイト構築</h2>
+<div class="fancybox_div">
+    <h3>概要</h3>
     <p class="top-0">
-        Proin eu eros ut neque mattis facilisis in sit amet turpis.
-        Aenean vitae malesuada libero.
-        Mauris in risus vitae nibh pulvinar eleifend lacinia sit amet nulla.
-        Integer adipiscing varius dapibus. Donec erat mi, aliquet placerat pulvinar vel.
-        <br/><br/>
-        Fusce aliquam dignissim metus vel faucibus.
-        Aenean sed sem felis, vitae laoreet lacus.
-        Mauris in nibh eu quam aliquet aliquam imperdiet ac est.
-        Nunc placerat vulputate placerat.
+        ECサイトの構築を多数担当してきましたが、その中でも自分の経歴上重要であったのは、社会人2年目の時に任された受託案件です。
+        この時、少人数ながらチームを取りまとめ、クライアントとの折衝や実装、動作テストなど、デザイン以外の大半の工程を担当しております。
     </p>
-    <ul class="no-list social-list-2">
-        <li class="social-twitter paragraph">
-            <span>Twitter Profile</span>
-            <a href="http://twitter.com/anna.brown">twitter.com/anna.b</a>
+    <h3>規模</h3>
+    <p class="top-0">
+        プログラマー1名、デザイナー2名。2009/9〜2008/11頃
+    </p>
+    <h3>使用ツール・言語</h3>
+    <ul>
+        <li>
+            PHP5
         </li>
-        <li class="social-facebook paragraph">
-            <span>Facebook Profile</span>
-            <a href="http://facebook.com/anna.brown">facebook.com/anna.b</a>
+        <li>
+            ECCUBE
+        </li>
+        <li>
+            PostgreSQL
         </li>
     </ul>
 </div>
