@@ -40,39 +40,23 @@
         </ul>
     </div>
     <div class="layout-50-right">
-        <h3>言語・フレームワーク等</h3>
-@foreach ($skills['program'] as $skill)
-        <ul class="skill-list no-list">
-            <li>
-                <h5>{{ $skill->name }}</h5>
-                <div class="skill-list-item-level">
-@for ($i = 1; $i <= 5; $i++)
-                    <span @if($i > $skill->grade)class="skill-list-item-level-off"@endif></span>
-@endfor
-                </div>
-                <div class="skill-list-item-period">
-                    {{ $skill->description }}
-                </div>
-            </li>
-        </ul>
-@endforeach
-
-        <h3 class="margin-top-30">役割</h3>
-@foreach ($skills['position'] as $skill)
-        <ul class="skill-list no-list">
-            <li>
-                <h5>{{ $skill->name }}</h5>
-                <div class="skill-list-item-level">
-@for ($i = 1; $i <= 5; $i++)
-                    <span @if($i > $skill->grade)class="skill-list-item-level-off"@endif></span>
-@endfor
-                </div>
-                <div class="skill-list-item-period">
-                    {{ $skill->description }}
-                </div>
-            </li>
-        </ul>
-@endforeach
-
+        @foreach ($skill_types as $skill_type)
+            <h3 class="margin-top-30">{{ $skill_type->name }}</h3>
+            @foreach ($skills[$skill_type->code] as $skill)
+                <ul class="skill-list no-list">
+                    <li>
+                        <h5>{{ $skill->name }}</h5>
+                        <div class="skill-list-item-level">
+                            @for ($i = 1; $i <= 5; $i++)
+                                <span @if($i > $skill->grade)class="skill-list-item-level-off"@endif></span>
+                            @endfor
+                        </div>
+                        <div class="skill-list-item-period">
+                            {{ $skill->description }}
+                        </div>
+                    </li>
+                </ul>
+            @endforeach
+        @endforeach
     </div>
 </div>

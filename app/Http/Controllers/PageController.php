@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 # use Illuminate\Http\Request;
 use App\Models\Work;
 use App\Models\Skill;
+use App\Models\SkillType;
 use App\Models\Portfolio;
 use App\Models\Photo;
 use App\Models\Freetime;
@@ -30,10 +31,12 @@ class PageController extends Controller
     public function resume()
     {
         $works = Work::orderBy('id', 'asc')->get();
+        $skill_types = SkillType::orderBy('id', 'asc')->get();
         $skills = Skill::get_by_each_types();
 
         return view('page/resume')->with([
             'works' => $works,
+            'skill_types' => $skill_types,
             'skills' => $skills
         ]);
     }

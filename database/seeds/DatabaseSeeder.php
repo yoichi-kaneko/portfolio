@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             [
                 WorksSeeder::class,
                 SkillsSeeder::class,
+                SkillTypesSeeder::class,
                 PortfoliosSeeder::class,
                 FreetimesSeeder::class,
                 PhotosSeeder::class,

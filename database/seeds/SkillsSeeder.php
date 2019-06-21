@@ -81,26 +81,8 @@ class SkillsSeeder extends Seeder
             ],
             [
                 'type' => 'program',
-                'name' => 'AngularJS',
-                'grade' => 1,
-                'description' => '1年未満'
-            ],
-            [
-                'type' => 'program',
-                'name' => 'Unity',
-                'grade' => 1,
-                'description' => '1年未満'
-            ],
-            [
-                'type' => 'program',
                 'name' => 'GitHub',
                 'grade' => 3,
-                'description' => '2年'
-            ],
-            [
-                'type' => 'program',
-                'name' => 'AWS',
-                'grade' => 2,
                 'description' => '2年'
             ],
             [
@@ -135,9 +117,27 @@ class SkillsSeeder extends Seeder
             ],
             [
                 'type' => 'position',
-                'name' => 'プロジェクトコントロール',
+                'name' => 'ファシリテーション',
                 'grade' => 4,
                 'description' => '7年'
+            ],
+            [
+                'type' => 'for_a_while',
+                'name' => 'AngularJS',
+                'grade' => 1,
+                'description' => '1年未満'
+            ],
+            [
+                'type' => 'for_a_while',
+                'name' => 'Unity',
+                'grade' => 1,
+                'description' => '1年未満'
+            ],
+            [
+                'type' => 'for_a_while',
+                'name' => 'AWS',
+                'grade' => 2,
+                'description' => '2年'
             ],
         ];
     }
