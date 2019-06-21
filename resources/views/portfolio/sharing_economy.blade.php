@@ -1,4 +1,4 @@
-<h2>ECサイト構築</h2>
+<h2>シェアリングエコノミーサイト開発</h2>
 <div class="fancybox_div">
     <h3>概要</h3>
     <p class="top-0">
@@ -7,7 +7,7 @@
     </p>
     <h3>規模</h3>
     <p class="top-0">
-        プログラマー1名、デザイナー2名。2009/9〜2008/11頃
+        プログラマー1名、デザイナー1名。2018/7〜2018/10頃
     </p>
     <h3>使用ツール・言語</h3>
     <ul>
@@ -15,10 +15,10 @@
             PHP5
         </li>
         <li>
-            ECCUBE
+            FuelPHP
         </li>
         <li>
-            PostgreSQL
+            MySQL
         </li>
     </ul>
 </div>

@@ -41,7 +41,7 @@ class FreetimesSeeder extends Seeder
             [
                 'code' => 'kosenjo',
                 'name' => 'ソシャゲ',
-                'description' => '（グラブルについての説明）',
+                'description' => '他にはソシャゲでグラブルをプレイしていたりしています。',
             ],
         ];
     }

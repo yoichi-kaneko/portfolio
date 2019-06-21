@@ -87,7 +87,7 @@ class SkillsSeeder extends Seeder
             ],
             [
                 'type' => 'position',
-                'name' => '設計',
+                'name' => '基礎、詳細設計',
                 'grade' => 4,
                 'description' => '8年'
             ],

@@ -63,7 +63,8 @@
 
             <div class="layout-4060-right">
                 <ul class="no-list header-menu clear-fix">
-                    <li class="header-menu-mail"><a href="mailto:kaneko@php-zfex.jp">kaneko@php-zfex.jp</a></li>
+                    <li class="header-menu-mail"><a href="mailto:kaneko@webstudio-wanderlust.voyage">kaneko@webstudio-wanderlust.voyage</a>
+                    </li>
                 </ul>
             </div>
 
