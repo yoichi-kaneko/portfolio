@@ -1,4 +1,4 @@
-<h2>ECサイト構築</h2>
+<h2>メディアプラットフォームサイト開発運営</h2>
 <div class="fancybox_div">
     <h3>概要</h3>
     <p class="top-0">

@@ -24,9 +24,9 @@
     <div class="layout-50-right">
         <div id="sliderBox">
             <div id="slider">
-                <img src="{{ asset('/image/_sample/slider_img1.jpg') }}" alt=""/>
-                <img src="{{ asset('/image/_sample/slider_img2.jpg') }}" alt=""/>
-                <img src="{{ asset('/image/_sample/slider_img3.jpg') }}" alt=""/>
+                @foreach ($photos as $photo)
+                    <img src="{{ asset('/image/photo/' . $photo->code . '.jpg') }}" alt="{{ $photo->name }}}"/>
+                @endforeach
             </div>
         </div>
     </div>

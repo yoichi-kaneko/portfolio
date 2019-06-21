@@ -6,13 +6,17 @@ namespace App\Http\Controllers;
 use App\Models\Work;
 use App\Models\Skill;
 use App\Models\Portfolio;
+use App\Models\Photo;
 use App\Models\Freetime;
 
 class PageController extends Controller
 {
     public function about()
     {
-        return view('page/about');
+        $photos = Photo::orderBy('id', 'asc')->where(['visible' => true])->get();
+        return view('page/about')->with([
+            'photos' => $photos
+        ]);
     }
 
     public function portfolio()
