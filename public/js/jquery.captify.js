@@ -13,7 +13,7 @@ jQuery.fn.extend({
 			opacity: '0.45',				// opacity of the caption on mouse over
 			className: 'caption-bottom',	// the name of the CSS class to apply to the caption box         
 			position: 'bottom',				// position of the caption (top or bottom)         
-			spanWidth: '100%'				// caption span % of the image
+            spanWidth: '85%'				// caption span % of the image
 		}, uo);
 		$(this).each(function() {
 			var img = this;

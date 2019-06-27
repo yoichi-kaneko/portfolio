@@ -130,7 +130,7 @@ $('.filter-select-box').bind('change',function(e)
 var i=0;
 $('.skill-list-item-level span').each(function() 
 {
-    $(this).delay(((i++)*50)).animate({opacity:1},500);
+    $(this).delay(((i++) * 20)).animate({opacity: 1}, 200);
 });
 
 /******************************************************************************/
