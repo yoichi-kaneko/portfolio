@@ -24,7 +24,7 @@
             EC-CUBE
         </li>
         <li>
-            MySQL
+            MySQL5
         </li>
     </ul>
 </div>
