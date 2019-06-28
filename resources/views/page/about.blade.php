@@ -17,7 +17,7 @@
             </li>
             <li class="social-skype paragraph">
                 <span>Skype Profile</span>
-                <a href="http://facebook.com/anna.brown">yoichi_kaneko</a>
+                yoichi_kaneko
             </li>
         </ul>
     </div>
