@@ -19,18 +19,8 @@ class PhotosSeeder extends Seeder
     {
         return [
             [
-                'code' => 'slider_img1',
-                'name' => 'サンプル画像１',
-                'visible' => true,
-            ],
-            [
-                'code' => 'slider_img2',
-                'name' => 'サンプル画像２',
-                'visible' => true,
-            ],
-            [
-                'code' => 'slider_img3',
-                'name' => 'サンプル画像３',
+                'code' => 'tanigawadake_1',
+                'name' => '2019/6/22 谷川岳にて',
                 'visible' => true,
             ],
         ];
