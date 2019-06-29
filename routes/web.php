@@ -10,6 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+if (config('app.env') === 'production') {
+    // asset()やurl()がhttpsで生成される
+    URL::forceScheme('https');
+}
 Route::get('/page/about', 'PageController@about');
 Route::get('/page/portfolio', 'PageController@portfolio');
 Route::get('/page/resume', 'PageController@resume');
