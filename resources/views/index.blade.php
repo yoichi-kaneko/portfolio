@@ -46,6 +46,26 @@
 
     {{Html::script('js/script.js')}}
     {{Html::script('js/cascade.js')}}
+@if ($is_production)
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143010188-1"></script>
+        <script>
+            const analytics_code = 'UA-143010188-1';
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', analytics_code);
+        </script>
+    @else
+        <script>
+            const analytics_code = null;
+        </script>
+    @endif
 </head>
 
 <body class="background-carbon">

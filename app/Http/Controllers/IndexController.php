@@ -8,6 +8,9 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $is_production = config('app.env') === 'production';
+        return view('index')->with([
+            'is_production' => $is_production
+        ]);
     }
 }

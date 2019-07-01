@@ -218,6 +218,10 @@
 
             $this.createNavigation();
             $this.controlNavigation('open');
+            if (analytics_code) {
+                page = $this.requestCurrent == '' ? 'main' : $this.requestCurrent;
+                gtag('event', 'load_ajax', {'event_category': page});
+            }
         };
 
         /**********************************************************************/
