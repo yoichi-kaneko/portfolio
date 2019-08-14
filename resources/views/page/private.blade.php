@@ -5,6 +5,7 @@
                 <h3>{{ $freetime->name }}</h3>
                 <p>
                     {{ $freetime->description }}
+                    @if ($freetime->url):&nbsp;<a href="{{ $freetime->url }}" target="_blank">LINK</a>@endif
                 </p>
             </li>
         @endforeach

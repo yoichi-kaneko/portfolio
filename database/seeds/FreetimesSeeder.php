@@ -34,13 +34,13 @@ class FreetimesSeeder extends Seeder
                 'code' => 'mountain',
                 'name' => '登山',
                 'description' => '時間が取れた時には日帰りや前泊で登山に行く事があります。2018年より本格的に始めた趣味で、百名山だと白山登頂、天城山縦走、谷川岳登頂など達成しています。',
-                'url' => null
+                'url' => 'https://yamap.com/users/1027860'
             ],
             [
                 'code' => 'untappd',
                 'name' => 'クラフトビール巡り',
-                'description' => '休日や、平日の仕事明けにビアバーに行って飲んで回っています。その記録はuhtappdというアプリで管理しています。untappd ID: straysheep',
-                'url' => null
+                'description' => '休日や、平日の仕事明けにビアバーに行って飲んで回っています。その記録はuhtappdというアプリで管理しています。',
+                'url' => 'https://untappd.com/user/straysheep'
             ],
             [
                 'code' => 'kosenjo',
