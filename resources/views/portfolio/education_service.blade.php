@@ -16,7 +16,7 @@
             PHP7
         </li>
         <li>
-            FuelPHP
+            FuelPHP1.8
         </li>
         <li>
             Ruby on Rails5

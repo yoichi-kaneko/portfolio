@@ -22,7 +22,7 @@
             PHP5
         </li>
         <li>
-            Zend Framework
+            Zend Framework1.1
         </li>
         <li>
             jQuery

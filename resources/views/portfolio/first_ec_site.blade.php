@@ -16,7 +16,7 @@
             PHP5
         </li>
         <li>
-            EC-CUBE
+            EC-CUBE2.4
         </li>
         <li>
             MySQL5

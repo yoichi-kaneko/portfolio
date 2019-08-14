@@ -53,6 +53,11 @@ class PortfoliosSeeder extends Seeder
                 'name' => 'ARアプリ開発',
                 'visible' => false
             ],
+            [
+                'code' => 'simulate_housing',
+                'name' => '賃貸住宅シミュレーション開発',
+                'visible' => false
+            ],
         ];
     }
 }

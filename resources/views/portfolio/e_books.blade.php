@@ -21,7 +21,7 @@
             PHP5
         </li>
         <li>
-            Zend Framework
+            Zend Framework1.2
         </li>
         <li>
             MySQL5
