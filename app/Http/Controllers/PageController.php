@@ -30,7 +30,7 @@ class PageController extends Controller
 
     public function resume()
     {
-        $works = Work::orderBy('id', 'asc')->get();
+        $works = Work::orderBy('id', 'desc')->get();
         $skill_types = SkillType::orderBy('id', 'asc')->get();
         $skills = Skill::get_by_each_types();
 

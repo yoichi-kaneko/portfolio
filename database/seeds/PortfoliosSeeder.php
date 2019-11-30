@@ -56,7 +56,7 @@ class PortfoliosSeeder extends Seeder
             [
                 'code' => 'simulate_housing',
                 'name' => '賃貸住宅シミュレーション開発',
-                'visible' => false
+                'visible' => true
             ],
         ];
     }

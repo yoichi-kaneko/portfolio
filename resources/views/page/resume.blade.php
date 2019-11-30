@@ -1,22 +1,5 @@
 <div class="layout-50 page-3">
     <div class="layout-50-left">
-        <h3>学歴</h3>
-        <ul class="career-list no-list">
-            <li>
-                <h5>東京理科大学</h5>
-                <p>
-                    2000 - 2005<br/>
-                    基礎工学部　電子応用工学科
-                </p>
-            </li>
-            <li>
-                <h5>筑波大学大学院</h5>
-                <p class="padding-bottom-0 margin-bottom-0">
-                    2006 - 2007<br/>
-                    システム情報工学研究科<br/>コンピュータサイエンス専攻
-                </p>
-            </li>
-        </ul>
         <h3 class="margin-top-30">職歴</h3>
         <ul class="career-list no-list">
 @foreach ($works as $work)
@@ -37,6 +20,23 @@
                 </p>
             </li>
 @endforeach
+        </ul>
+        <h3>学歴</h3>
+        <ul class="career-list no-list">
+            <li>
+                <h5>筑波大学大学院</h5>
+                <p class="padding-bottom-0 margin-bottom-0">
+                    2006 - 2007<br/>
+                    システム情報工学研究科<br/>コンピュータサイエンス専攻
+                </p>
+            </li>
+            <li>
+                <h5>東京理科大学</h5>
+                <p>
+                    2000 - 2005<br/>
+                    基礎工学部　電子応用工学科
+                </p>
+            </li>
         </ul>
     </div>
     <div class="layout-50-right">
