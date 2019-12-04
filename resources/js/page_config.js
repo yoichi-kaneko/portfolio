@@ -1,6 +1,6 @@
 title = $('title').html();
 
-var page={
+global.page={
     "about": {
         "js": "about.js",
         "tab": "tab-1",
@@ -31,7 +31,7 @@ var page={
     }
 };
 
-var options={
+global.options={
     "openStart": "",
     "title": title,
     //"meta": {
@@ -40,4 +40,4 @@ var options={
     //}
 };
 
-var request='';
+global.request='';

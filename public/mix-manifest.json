@@ -1,5 +1,8 @@
 {
+    "/js/cascade.js": "/js/cascade.js",
     "/js/jquery.captify.js": "/js/jquery.captify.js",
+    "/js/page_config.js": "/js/page_config.js",
+    "/js/script.js": "/js/script.js",
     "/js/vendors.js": "/js/vendors.js",
     "/css/page.css": "/css/page.css",
     "/css/responsive/width-0-479.css": "/css/responsive/width-0-479.css",
@@ -20,8 +23,6 @@
     "/js/jquery.fancybox.js": "/js/jquery.fancybox.js",
     "/js/jquery.fancybox-media.js": "/js/jquery.fancybox-media.js",
     "/js/jquery.fancybox-buttons.js": "/js/jquery.fancybox-buttons.js",
-    "/js/script.js": "/js/script.js",
-    "/js/cascade.js": "/js/cascade.js",
     "/js/jquery.jScrollPane.js": "/js/jquery.jScrollPane.js",
     "/js/jquery.qtip.min.js": "/js/jquery.qtip.min.js"
 }

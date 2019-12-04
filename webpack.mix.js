@@ -19,7 +19,10 @@ glob.sync('resources/sass/responsive/*.scss').map(function(file) {
 mix.copyDirectory('resources/assets/image', 'public/image');
 
 mix.js('resources/js/vendors.js', 'public/js')
-    .js('resources/js/jquery.captify.js', 'public/js');
+    .js('resources/js/jquery.captify.js', 'public/js')
+    .js('resources/js/page_config.js', 'public/js')
+    .js('resources/js/cascade.js', 'public/js')
+    .js('resources/js/script.js', 'public/js');
 
 mix.copy('resources/js/jquery-migrate.min.js', 'public/js/jquery-migrate.min.js');
 mix.copy('resources/js/jquery.easing.js', 'public/js/jquery.easing.js');
@@ -33,8 +36,6 @@ mix.copy('resources/js/jquery.carouFredSel.packed.js', 'public/js/jquery.carouFr
 mix.copy('resources/js/jquery.fancybox.js', 'public/js/jquery.fancybox.js');
 mix.copy('resources/js/jquery.fancybox-media.js', 'public/js/jquery.fancybox-media.js');
 mix.copy('resources/js/jquery.fancybox-buttons.js', 'public/js/jquery.fancybox-buttons.js');
-mix.copy('resources/js/jquery.fancybox-buttons.js', 'public/js/jquery.fancybox-buttons.js');
-mix.copy('resources/js/script.js', 'public/js/script.js');
-mix.copy('resources/js/cascade.js', 'public/js/cascade.js');
+
 mix.copy('resources/js/jquery.jScrollPane.js', 'public/js/jquery.jScrollPane.js');
 mix.copy('resources/js/jquery.qtip.min.js', 'public/js/jquery.qtip.min.js');
