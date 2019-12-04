@@ -83,7 +83,7 @@
 
                             $this.cascadeElement.each(function()
                             {
-                                $(this).animate({height:parseInt($this.cascade.css('height')),opacity:1},getRandom(100,1000),'easeInOutQuint',function()
+                                $(this).animate({height:parseInt($this.cascade.css('height')),opacity:1}, window.getRandom(100,1000),'easeInOutQuint',function()
                                 {
                                     if((++j)==$this.cascadeElement.length)
                                     {

@@ -25,8 +25,7 @@
     {{Html::style('css/responsive/width-480-767.css', ['media' => 'screen and (min-width:480px) and (max-width:767px)'])}}
     {{Html::style('css/responsive/width-0-479.css', ['media' => 'screen and (min-width:0px) and (max-width:479px)'])}}
 
-    {{Html::script('js/linkify.js')}}
-    {{Html::script('js/jquery.min.js')}}
+    {{Html::script('js/vendors.js')}}
     {{Html::script('js/jquery-migrate.min.js')}}
     {{Html::script('js/jquery.easing.js')}}
     {{Html::script('js/jquery.isotope.js')}}

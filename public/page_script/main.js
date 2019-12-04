@@ -72,3 +72,11 @@ $('.filter-select-box').bind('change',function(e)
 	filterGallery(e,this)
 });
 
+
+$('.fancybox-iframe').fancybox(
+    {
+        type: 'ajax',
+        arrows: false
+        // helpers					:	helpers
+    });
+

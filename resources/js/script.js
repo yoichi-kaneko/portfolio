@@ -1,7 +1,7 @@
 
 /*****************************************************************/
 
-function getRandom(min,max)
+window.getRandom = function(min,max)
 {
 	return((Math.floor(Math.random()*(max-min)))+min);
 }

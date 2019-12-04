@@ -11,19 +11,19 @@ jQuery.fn.extend({
 			animation: 'slide',				// 'fade', 'slide', 'always-on'
 			prefix: '',						// text/html to be placed at the beginning of every caption
 			opacity: '0.45',				// opacity of the caption on mouse over
-			className: 'caption-bottom',	// the name of the CSS class to apply to the caption box         
-			position: 'bottom',				// position of the caption (top or bottom)         
+			className: 'caption-bottom',	// the name of the CSS class to apply to the caption box
+			position: 'bottom',				// position of the caption (top or bottom)
             spanWidth: '85%'				// caption span % of the image
 		}, uo);
 		$(this).each(function() {
 			var img = this;
-			$(this).load(function() {
+			$(this).on('load', function() {
 				if (img.hasInit){ return false; }
 				img.hasInit = true;
 				var over_caption = false;
 				var over_img = false;
 
-				//pull the label from another element if there is a 
+				//pull the label from another element if there is a
 				//valid element id inside the rel="..." attribute, otherwise,
 				//just use the text in the alt="..." attribute.
 				var captionLabelSrc = $('#' + $(this).attr('alt'));
@@ -32,8 +32,8 @@ jQuery.fn.extend({
 					var captionLabelHTML = !captionLabelSrc.length ? $(this).attr('alt') : captionLabelSrc.html();
 					captionLabelSrc.remove();
 					var toWrap = this.parent && this.parent.tagName == 'a' ? this.parent : $(this);
-					
-					var wrapper = 
+
+					var wrapper =
 						toWrap.wrap('<div></div>').parent()
 						.css({
 							overflow: 'hidden',
@@ -58,7 +58,7 @@ jQuery.fn.extend({
 					//and other other for the fully-opaque label
 					var caption = $('div:last', wrapper.append('<div></div>'))
 						.addClass(o.className);
-						
+
 					var captionContent = $('div:last', wrapper.append('<div></div>'))
 						.addClass(o.className)
 						.append(o.prefix)
@@ -77,8 +77,8 @@ jQuery.fn.extend({
 					});
 
 					if (o.position == 'bottom'){
-						var vLabelOffset = 
-							parseInt(caption.css('border-top-width').replace('px', '')) + 
+						var vLabelOffset =
+							parseInt(caption.css('border-top-width').replace('px', '')) +
 							parseInt(captionContent.css('padding-top').replace('px', '')) - 1;
 						captionContent.css('paddingTop', vLabelOffset);
 					}
@@ -99,11 +99,11 @@ jQuery.fn.extend({
 					var captionPosition = o.position == 'top'
 					   ? { hide: -$(img).height() - caption.outerHeight() - 1, show: -$(img).height() }
 					   : { hide: 0, show: -caption.outerHeight() + topBorderAdj };
-					
+
 					//pull the label up on top of the background
 					captionContent.css('marginTop', -caption.outerHeight());
 					caption.css('marginTop', captionPosition[o.animation == 'fade' || o.animation == 'always-on' ? 'show' : 'hide']);
-					
+
 					//function to push the caption out of view
 					var cHide = function() {
 						if (!over_caption && !over_img){
