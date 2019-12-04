@@ -9,7 +9,7 @@
     <meta name="description" content="金子陽一のポートフォリオページ"/>
 
     {{Html::style('css/nivo-slider.css')}}
-    {{Html::style('css/jquery.qtip.css')}}
+    {{Html::style('css/vendors.css')}}
     {{Html::style('css/jquery.captify.css')}}
     {{Html::style('css/jquery.jScrollPane.css')}}
     {{Html::style('css/fancybox/jquery.fancybox.css')}}
@@ -31,7 +31,7 @@
     {{Html::script('js/jquery.isotope.js')}}
     {{Html::script('js/jquery.captify.js')}}
     {{Html::script('js/jquery.blockUI.js')}}
-    {{Html::script('js/jquery.qtip.min.js')}}
+
     {{Html::script('js/jquery.ba-bqq.min.js')}}
     {{Html::script('js/jquery.jScrollPane.js')}}
     {{Html::script('js/jquery.mousewheel.min.js')}}

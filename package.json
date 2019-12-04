@@ -25,6 +25,8 @@
     },
     "dependencies": {
         "glob": "^7.1.6",
-        "linkifyjs": "^2.1.8"
+        "linkifyjs": "^2.1.8",
+        "qtip": "0.0.4",
+        "qtip2": "^3.0.3"
     }
 }

@@ -13,6 +13,7 @@ const glob = require('glob');
  */
 
 mix.sass('resources/sass/page.scss', 'public/css');
+mix.sass('resources/sass/vendors.scss', 'public/css');
 glob.sync('resources/sass/responsive/*.scss').map(function(file) {
     mix.sass(file, 'public/css/responsive');
 });
@@ -38,4 +39,4 @@ mix.copy('resources/js/jquery.fancybox-media.js', 'public/js/jquery.fancybox-med
 mix.copy('resources/js/jquery.fancybox-buttons.js', 'public/js/jquery.fancybox-buttons.js');
 
 mix.copy('resources/js/jquery.jScrollPane.js', 'public/js/jquery.jScrollPane.js');
-mix.copy('resources/js/jquery.qtip.min.js', 'public/js/jquery.qtip.min.js');
+// mix.copy('resources/js/jquery.qtip.min.js', 'public/js/jquery.qtip.min.js');

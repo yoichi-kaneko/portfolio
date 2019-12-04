@@ -5,6 +5,7 @@
     "/js/script.js": "/js/script.js",
     "/js/vendors.js": "/js/vendors.js",
     "/css/page.css": "/css/page.css",
+    "/css/vendors.css": "/css/vendors.css",
     "/css/responsive/width-0-479.css": "/css/responsive/width-0-479.css",
     "/css/responsive/width-0-767.css": "/css/responsive/width-0-767.css",
     "/css/responsive/width-0-959.css": "/css/responsive/width-0-959.css",
@@ -23,6 +24,5 @@
     "/js/jquery.fancybox.js": "/js/jquery.fancybox.js",
     "/js/jquery.fancybox-media.js": "/js/jquery.fancybox-media.js",
     "/js/jquery.fancybox-buttons.js": "/js/jquery.fancybox-buttons.js",
-    "/js/jquery.jScrollPane.js": "/js/jquery.jScrollPane.js",
-    "/js/jquery.qtip.min.js": "/js/jquery.qtip.min.js"
+    "/js/jquery.jScrollPane.js": "/js/jquery.jScrollPane.js"
 }
