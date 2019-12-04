@@ -12,6 +12,7 @@ public/hot
 public/css/responsive
 public/image
 public/images
+public/css/page.css
 storage/*.key
 .env.*.php
 .env.php
