@@ -2,13 +2,13 @@
 /*	Image preloader															  */
 /******************************************************************************/
 
-$('.image-preloader img').each(function() 
+$('.image-preloader img').each(function()
 {
 	$(this).attr('src',$(this).attr('src') + '?i='+getRandom(1,100000));
-	$(this).bind('load',function() 
-	{ 
-		$(this).parent().first().css('background-image','none'); 
-		$(this).animate({opacity:1},1000); 
+	$(this).bind('load',function()
+	{
+		$(this).parent().first().css('background-image','none');
+		$(this).animate({opacity:1},1000);
 	});
 });
 
@@ -28,16 +28,10 @@ helpers.buttons = {
 };
 
 $('.fancybox-image').fancybox(
-{	
+{
 	type					:	'image',
 	helpers					:	helpers
 });
-$('.fancybox-iframe').fancybox(
-    {
-        type: 'ajax',
-        arrows: false
-        // helpers					:	helpers
-    });
 
 /******************************************************************************/
 /*	Fancybox for youtube videos												  */
@@ -79,13 +73,13 @@ $('.gallery-list').hover(
     function()
     {
         $(this).find('li img').animate({opacity:1},250);
-    }	
+    }
 
 );
 
 $('.gallery-list li').hover(
 
-    function() 
+    function()
     {
         $(this).siblings('li').find('img').css('opacity',0.5);
         $(this).find('img').animate({opacity:1},250);
@@ -93,11 +87,11 @@ $('.gallery-list li').hover(
 
     function()
     {
-        $(this).find('img').css('opacity',1);	
+        $(this).find('img').css('opacity',1);
     }
 
 );
-	
+
 /******************************************************************************/
 /*	Portfolio filter														  */
 /******************************************************************************/
@@ -111,9 +105,9 @@ $(window).resize(function()
 		itemSelector	: 'li',
 		animationEngine : 'jquery'
 	});
-});	
+});
 
-$('.filter-list li a').bind('click',function(e) 
+$('.filter-list li a').bind('click',function(e)
 {
 	filterGallery(e,this);
 });
@@ -122,13 +116,13 @@ $('.filter-select-box').bind('change',function(e)
 {
 	filterGallery(e,this)
 });
-				
+
 /******************************************************************************/
 /*	Skill list animation													  */
 /******************************************************************************/
 
 var i=0;
-$('.skill-list-item-level span').each(function() 
+$('.skill-list-item-level span').each(function()
 {
     $(this).delay(((i++) * 20)).animate({opacity: 1}, 200);
 });
@@ -141,17 +135,17 @@ try
 {
 	var coordinate=new google.maps.LatLng(29.803621,-95.37811);
 
-	var mapOptions= 
+	var mapOptions=
 	{
 		zoom:15,
 		center:coordinate,
 		streetViewControl:false,
 		mapTypeControl:false,
-		zoomControlOptions: 
+		zoomControlOptions:
 		{
 			position:google.maps.ControlPosition.RIGHT_CENTER
 		},
-		panControlOptions: 
+		panControlOptions:
 		{
 			position:google.maps.ControlPosition.LEFT_CENTER
 		},
@@ -168,26 +162,26 @@ try
 	}
 
 	new google.maps.Marker(markerOptions);
-	
-	$(window).resize(function() 
+
+	$(window).resize(function()
 	{
 		try {googleMap.setCenter(coordinate);}
 		catch(e) {}
-	});	
+	});
 }
-catch(e) {}	
+catch(e) {}
 
 /******************************************************************************/
 /*	Contact form															  */
 /******************************************************************************/
 
-$('#contact-form').submit(function() 
+$('#contact-form').submit(function()
 {
 	submitContactForm();
 	return(false);
 });
 
-$('#contact-form-reset').bind('click',function(e) 
+$('#contact-form-reset').bind('click',function(e)
 {
 	e.preventDefault();
 	$('#contact-form').find('input[type="text"],textarea').val('').blur();

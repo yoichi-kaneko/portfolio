@@ -1,6 +1,6 @@
 
 (function($)
-{    
+{
     /**************************************************************************/
 
     var Cascade=function(cascade,page,options,requestCurrent)
@@ -51,7 +51,7 @@
         {
             $this.cascadeElementWidth=parseInt($this.cascadeElement.first().css('width'));
 
-            $(window).bind('resize',function() 
+            $(window).bind('resize',function()
             {
                 $this.setResponsive();
             });
@@ -61,9 +61,9 @@
             var i=0,k=0;
 
             var image=$this.imageLoad($this.cascadeElement.first());
-            image.bind('load',function() 
+            image.bind('load',function()
             {
-                $this.cascadeElement.each(function() 
+                $this.cascadeElement.each(function()
                 {
                     image=$this.imageLoad($(this).children('a').first());
 
@@ -72,7 +72,7 @@
 
                     k++;
 
-                    $(image).bind('load',function() 
+                    $(image).bind('load',function()
                     {
                         if((++i)==$this.cascadeElement.length)
                         {
@@ -81,7 +81,7 @@
                             $this.cascade.removeClass('preloader');
                             $this.cascadeElement.css('display','block');
 
-                            $this.cascadeElement.each(function() 
+                            $this.cascadeElement.each(function()
                             {
                                 $(this).animate({height:parseInt($this.cascade.css('height')),opacity:1},getRandom(100,1000),'easeInOutQuint',function()
                                 {
@@ -97,7 +97,7 @@
                                     };
                                 });
                             });
-                        };            
+                        };
                     });
                 });
             });
@@ -107,7 +107,7 @@
         /**********************************************************************/
 
         this.handleRequest=function()
-        {     
+        {
             if($this.requestType==2)
             {
                 $this.doRequest();
@@ -115,9 +115,9 @@
             else
             {
                 var start=false;
-                if(window.location.hash=='') 
+                if(window.location.hash=='')
                 {
-                    if($this.options.openStart.length) 
+                    if($this.options.openStart.length)
                     {
                         start=true;
                         window.location.href=$this.getURL($this.options.openStart);
@@ -126,7 +126,7 @@
 
                 if(!start)
                 {
-                    var requestCurrent=$this.checkRequest();    
+                    var requestCurrent=$this.checkRequest();
                     if(requestCurrent!==false)
                     {
                         $this.requestCurrent=requestCurrent;
@@ -134,7 +134,7 @@
                     }
                 }
 
-                $(window).bind('hashchange',function(event) 
+                $(window).bind('hashchange',function(event)
                 {
                     event.preventDefault();
 
@@ -145,9 +145,9 @@
 
                     $this.requestCurrent=requestCurrent;
                     $this.doRequest();
-                }); 
+                });
             }
-        };    
+        };
 
         /**********************************************************************/
 
@@ -160,7 +160,7 @@
 
             if($this.requestCurrent=='main') $this.close();
             else if(open) $this.close({'onComplete':function() { $this.open(); }});
-            else $this.open();    
+            else $this.open();
 
             return(true);
         };
@@ -196,14 +196,14 @@
         this.openComplete=function()
         {
             $('.cascade-menu').trigger('configuration',{mousewheel:false});
-            
+
             var scriptPath=$this.getPage($this.requestCurrent,'js');
 
             $this.createScrollbar();
 
-            $this.showPreloader(false);    
+            $this.showPreloader(false);
 
-            jQuery.getScript('page_script/main.js',function() 
+            jQuery.getScript('page_script/main.js',function()
             {
                 if(scriptPath!='')
                     jQuery.getScript('page_script/'+scriptPath);
@@ -247,7 +247,7 @@
         {
             $('.cascade-menu').trigger('slideTo',[0,0,false,{duration:0}]);
             $('.cascade-menu').trigger('configuration',{mousewheel:false});
-            
+
             $this.controlNavigation('pending');
 
             var i=0,k=0;
@@ -259,18 +259,18 @@
 
             $('#'+tab).css('z-index',2);
 
-            $('.cascade-menu li').each(function() 
+            $('.cascade-menu li').each(function()
             {
                 var left=-1*(($this.cascadeElementWidth*k)+($this.cascadeElementMargin*k));
 
                 k++;
 
-                jQuery(this).animate({left:left},500,'easeOutExpo',function() 
+                jQuery(this).animate({left:left},500,'easeOutExpo',function()
                 {
                     i++;
                     if(i==$this.cascadeElement.length)
                     {
-                        $('.cascade-menu').animate({'margin-left':margin},100,'easeOutBounce',function() 
+                        $('.cascade-menu').animate({'margin-left':margin},100,'easeOutBounce',function()
                         {
                             var className=$('#'+$this.getPage($this.requestCurrent,'tab')).attr('class').split(' ')[0].split('-')[0];
 
@@ -283,8 +283,8 @@
                                 if($this.requestType==1)
                                 {
                                     $this.showPreloader(true);
-                                    $.get('page/'+pagePath,{},function(page) 
-                                    {            
+                                    $.get('page/'+pagePath,{},function(page)
+                                    {
                                         $('.cascade-page').html(page);
                                         $this.openComplete();
                                     },
@@ -296,23 +296,23 @@
                     };
                 });
             });
-        };    
+        };
 
         /**********************************************************************/
 
         this.close=function(data)
-        {        
+        {
             $this.setTitle();
-            
+
             $this.controlNavigation('pending');
-            
-            if(!$this.isOpen()) 
+
+            if(!$this.isOpen())
             {
                 $this.controlNavigation('close');
                 $this.enable=true;
                 return;
             }
-            
+
             $(':input,a').qtip('destroy');
 
             $this.destroyScrollbar();
@@ -321,11 +321,11 @@
             if($this.requestPrevious!='')
                 $('#'+$this.getPage($this.requestPrevious,'tab')+' a').attr('href',$this.getURL($this.requestPrevious));
 
-            $this.cascadeWindow.animate({width:'0px',opacity:0},500,'easeOutBounce',function()     
+            $this.cascadeWindow.animate({width:'0px',opacity:0},500,'easeOutBounce',function()
             {
                 $this.cascadeWindow.css('display','none');
                 $this.expand(data);
-            });    
+            });
         };
 
         /**********************************************************************/
@@ -336,7 +336,7 @@
 
             $('.cascade-menu').css('margin-left',0);
 
-            $this.cascadeElement.each(function() 
+            $this.cascadeElement.each(function()
             {
                 $(this).css('z-index',1);
                 left+=$this.cascadeElementWidth+((counter++)>0 ? $this.cascadeElementMargin : 0);
@@ -348,32 +348,32 @@
                     if(done==$this.cascadeElement.length)
                     {
                         $this.cascade.removeClass('open');
-                        
+
                         if(typeof(data)!='undefined')
                         {
                             if(typeof(data.onComplete)!='undefined') data.onComplete.apply();
-                            else 
+                            else
                             {
                                 $this.enable=true;
                                 $this.controlNavigation('close');
                             }
                         }
-                        else 
+                        else
                         {
-                            $this.enable=true;    
+                            $this.enable=true;
                             $this.controlNavigation('close');
                         }
                     };
                 });
             });
-        };        
+        };
 
         /**********************************************************************/
         /**********************************************************************/
 
         this.getFirstPage=function()
         {
-            for(var id in $this.page) 
+            for(var id in $this.page)
             {
                 if($this.page[id]['main']==1) return(id);
             };
@@ -405,7 +405,7 @@
 
             for(var id in $this.page)
             {
-                if(n) 
+                if(n)
                 {
                     if($this.page[id]['main']==1) return(id);
                 };
@@ -432,7 +432,7 @@
             };
 
             return(false);
-        };  
+        };
 
         /**********************************************************************/
         /**********************************************************************/
@@ -441,22 +441,22 @@
         {
             $this.scrollbar=$('.cascade-window-content').jScrollPane({maintainPosition:false,autoReinitialise:true,autoReinitialiseDelay:100}).data('jsp');
 
-            $('.cascade-window-content').bind('jsp-scroll-y',function() 
+            $('.cascade-window-content').bind('jsp-scroll-y',function()
             {
                 $(':input,a').qtip('hide');
-            });  
+            });
         };
 
         /**********************************************************************/
 
         this.destroyScrollbar=function()
         {
-            if($this.scrollbar!='') 
+            if($this.scrollbar!='')
             {
                 $this.scrollbar.destroy();
                 $this.scrollbar='';
-            };              
-        };    
+            };
+        };
 
         /**********************************************************************/
         /**********************************************************************/
@@ -465,13 +465,13 @@
         {
             $('.cascade-menu').carouFredSel(
             {
-                items: 
+                items:
                 {
                     visible        :    $this.cascadeMinimumTabCount,
                     minimum        :    $this.cascadeMinimumTabCount,
                     width        :    parseInt($this.cascadeElement.first().css('width'))+$this.cascadeElementMargin
                 },
-                scroll: 
+                scroll:
                 {
                     items        :    1,
                     duration    :    500,
@@ -481,7 +481,7 @@
                 mousewheel        :    true,
                 prev            :    '.cascade-navigation-slider-prev',
                 next            :    '.cascade-navigation-slider-next'
-            });        
+            });
 
             $('.cascade .caroufredsel_wrapper').css('width',parseInt($('.cascade .caroufredsel_wrapper').width())-$this.cascadeElementMargin);
 
@@ -494,12 +494,12 @@
 
         this.createNavigation=function()
         {
-            var prev=$this.getPrevPage();                
-            var next=$this.getNextPage();    
+            var prev=$this.getPrevPage();
+            var next=$this.getNextPage();
 
             $this.cascade.find('.cascade-navigation-prev').attr('href',$this.getURL(prev));
-            $this.cascade.find('.cascade-navigation-next').attr('href',$this.getURL(next));    
-        };    
+            $this.cascade.find('.cascade-navigation-next').attr('href',$this.getURL(next));
+        };
 
         /**********************************************************************/
 
@@ -511,13 +511,13 @@
             if(type!='pending')
             {
                 if(type=='open') $('.cascade-navigation-next,.cascade-navigation-prev').css({'display':'block'});
-                else if(type=='close') 
+                else if(type=='close')
                 {
                     $('.cascade-menu').trigger('configuration',{mousewheel:true});
                     $('.cascade-navigation-slider-prev,.cascade-navigation-slider-next').css({'display':'block'});
                 }
             }
-            
+
             if($this.cascadeElement.length<$this.cascadeMinimumTabCount)
                 $('.cascade-navigation-slider-prev,.cascade-navigation-slider-next').css({'display':'none'});
         };
@@ -527,7 +527,7 @@
 
         this.imageLoad=function(object)
         {
-            var image=$(document.createElement('img'));    
+            var image=$(document.createElement('img'));
             var url=object.css('background-image').substring(4);
 
             url=url.substring(0,url.length-1).replace(/"/ig,'');
@@ -546,7 +546,7 @@
             {
                 window.location.href=$this.getURL($this.requestCurrent);
                 return(false);
-            }  
+            }
 
             return(true);
         };
@@ -586,7 +586,7 @@
 
             margin=0;
             $this.cascadeWindowWidth=610;
-            
+
             $this.cascadeMinimumTabCount=5;
             $this.cascadeMinimumTabVisibleCount=4;
 
@@ -623,7 +623,7 @@
             }
 
             $('.cascade-menu').css('margin-left',margin);
-            
+
             $('.cascade-menu').trigger('configuration',['items.minimum',$this.cascadeMinimumTabCount]);
             $('.cascade-menu').trigger('configuration',['items.visible',$this.cascadeMinimumTabVisibleCount]);
 
@@ -640,11 +640,11 @@
         this.getResponsiveStep=function()
         {
             var width=parseInt($('body>div.content.main').css('width'));
-            
+
             if(width==620) return(1);
-            if(width==410) return(2);        
+            if(width==410) return(2);
             if(width==200) return(3);
-            
+
             return(0);
         };
 
