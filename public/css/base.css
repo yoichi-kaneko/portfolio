@@ -11,10 +11,10 @@ b,u,i,center,
 dl,dt,dd,ol,ul,li,
 fieldset,form,label,legend,
 table,caption,tbody,tfoot,thead,tr,th,td,
-article,aside,canvas,details,embed, 
-figure,figcaption,footer,header,hgroup, 
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
 menu,nav,output,ruby,section,summary,
-time,mark,audio,video 
+time,mark,audio,video
 {
 	border:0px;
     margin:0px;
@@ -38,7 +38,7 @@ body
 	padding:0px;
 	padding-bottom:20px;
 	background-repeat:repeat-x;
-	background-position:0px 0px;	
+	background-position:0px 0px;
 }
 
 body.background-grid		{ background-image:url('../image/background/grid.png');			}
@@ -63,9 +63,9 @@ textarea
 	overflow:hidden;
 }
 
-a,textarea,input 
-{ 
-	outline:none; 
+a,textarea,input
+{
+	outline:none;
 }
 
 br
@@ -83,7 +83,7 @@ p,.paragraph
 	line-height:150%;
 }
 
-.clear-fix:after 
+.clear-fix:after
 {
 	height:0;
 	clear:both;
@@ -93,7 +93,7 @@ p,.paragraph
 	visibility: hidden;
 }
 
-* html .clear-fix             { zoom: 1; } 
+* html .clear-fix             { zoom: 1; }
 *:first-child+html .clear-fix { zoom: 1; }
 
 
@@ -112,7 +112,7 @@ p,.paragraph
 }
 
 a
-{	
+{
 	text-decoration:none !important;
 }
 
@@ -221,7 +221,7 @@ img
 {
 	-webkit-border-radius:0px;
 	-moz-border-radius:0px;
-	border-radius:0px;	
+	border-radius:0px;
 }
 
 .fancybox-skin
@@ -266,20 +266,20 @@ img
 
 	.layout-50 {}
 
-	.layout-50-left 
-	{ 
+	.layout-50-left
+	{
 		clear:both;
-		float:left; 
+		float:left;
 	}
 
-	.layout-50-right 
-	{ 
-		float:right; 
+	.layout-50-right
+	{
+		float:right;
 	}
 
 	.layout-50-left,
-	.layout-50-right 
-	{ 
+	.layout-50-right
+	{
 		width:48%;
 	}
 
@@ -289,17 +289,17 @@ img
 
 	.layout-6040 {}
 
-	.layout-6040-left 
+	.layout-6040-left
 	{
-		width:59%; 
+		width:59%;
 		clear:both;
-		float:left; 
+		float:left;
 	}
 
-	.layout-6040-right 
-	{ 
+	.layout-6040-right
+	{
 		width:39%;
-		float:right; 
+		float:right;
 	}
 
 	/**************************************************************************/
@@ -308,11 +308,11 @@ img
 
 	.layout-4060 {}
 
-	.layout-4060-left 
+	.layout-4060-left
 	{
         width: 43%;
 		clear:both;
-		float:left; 
+		float:left;
 	}
 
 .layout-4060-right {
@@ -326,19 +326,19 @@ img
 
 	.layout-7030 {}
 
-	.layout-7030-left 
+	.layout-7030-left
 	{
-		width:69%; 
+		width:69%;
 		clear:both;
-		float:left; 
+		float:left;
 	}
 
-	.layout-7030-right 
-	{ 
+	.layout-7030-right
+	{
 		width:29%;
-		float:right; 
+		float:right;
 	}
-	
+
 /******************************************************************************/
 /*	Font																	  */
 /******************************************************************************/
@@ -364,55 +364,55 @@ div.cascade ul.cascade-menu li a span.subtitle
 	{
 		background-color:#252525;
 	}
-	
+
 	.jspDrag
 	{
 		background-color:#343434;
 	}
-	
+
 	.jspHover
 	{
 		background-color:#E0E0E0;
 	}
-	
+
 	.ui-tooltip-error .qtip-content
 	{
 		background:#E9431C;
 	}
-	
+
 	.ui-tooltip-success .qtip-content
 	{
 		background:#61911B;
 	}
-	
+
 	.image-preloader,
 	ul.filter-list li a:hover,
 	ul.filter-list li a.selected
 	{
 		background-color:#000000;
 	}
-	
+
 	div.footer hr.footer-line
 	{
 		background-color:#353535;
 	}
-	
+
 	/**************************************************************************/
 	/*	Color / Text color													  */
 	/**************************************************************************/
-	
+
 	body,input,textarea,select,a,#fancybox-title-inside
 	{
 		color:#9F9F9F;
 	}
-	
+
 	h1,h2,h3,h4,h5,h6,
 	h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,
 	div.cascade div.cascade-window h3
 	{
 		color:#E0E0E0;
 	}
-	
+
 	.ui-tooltip-error .qtip-content,
 	.ui-tooltip-success .qtip-content,
 	div.cascade ul.cascade-menu li a span.title,
@@ -420,13 +420,13 @@ div.cascade ul.cascade-menu li a span.subtitle
 	{
 		color:#FFFFFF;
 	}
-	
+
 	a.button:hover,
 	input.button:hover
 	{
 		color:#D75902;
 	}
-	
+
 	div.header h5 a
 	{
 		color:#969696;
@@ -436,19 +436,19 @@ div.cascade ul.cascade-menu li a span.subtitle
 	{
 		color:#353535;
 	}
-	
+
 	div.footer div.main div.latest-tweets #latest-tweets ul li p a
 	{
 		color:#DEDEDE;
 	}
-	
+
 	ul.social-list-2 li a
 	{
 		color:#DFDFDF;
 	}
 
-	ul.skill-list li h5, 
-	ul.career-list li h5 
+	ul.skill-list li h5,
+	ul.career-list li h5
 	{
 		color:#EAB000;
 	}
@@ -457,7 +457,7 @@ div.cascade ul.cascade-menu li a span.subtitle
 	{
 		color:#D65902;
 	}
-	
+
 /******************************************************************************/
 /*	Headers																	  */
 /******************************************************************************/
@@ -479,10 +479,10 @@ ul.no-list
 {
 	margin:0px;
 	padding:0px;
-	list-style-type:none;		
+	list-style-type:none;
 }
 
-/******************************************************************************/	
+/******************************************************************************/
 /*	Scrollbars															      */
 /******************************************************************************/
 
@@ -512,7 +512,7 @@ ul.no-list
 /******************************************************************************/
 
 .ui-tooltip-error .qtip-content,
-.ui-tooltip-success .qtip-content 
+.ui-tooltip-success .qtip-content
 {
 	border:none;
 	font-size:13px;
@@ -565,7 +565,7 @@ ul.no-list
 	display:block;
 	background-repeat:no-repeat;
 	background-position:50% 50%;
-	background-image:url('../image/image_preloader.gif');		
+	background-image:url('../image/image_preloader.gif');
 }
 
 	.image-preloader img
@@ -649,7 +649,7 @@ input.button
 		border-color:#D75902;
 		text-decoration:none;
 	}
-	
+
 /******************************************************************************/
 /* Social list														          */
 /******************************************************************************/
@@ -673,7 +673,7 @@ input.button
 		ul.social-list-1 li:first-child
 		{
 			padding-right:15px;
-			border-right:solid 1px #343434; 
+			border-right:solid 1px #343434;
 		}
 
 			ul.social-list-1 li a
@@ -703,7 +703,7 @@ input.button
 
 	/**************************************************************************/
 	/* Social list / Social list 2									          */
-	/**************************************************************************/	
+	/**************************************************************************/
 
 	ul.social-list-2
 	{
@@ -717,16 +717,16 @@ input.button
 			margin-bottom:20px;
 			background-repeat:no-repeat;
 			background-position:center left;
-		}	
+		}
 
-			ul.social-list-2 li.social-rss			{ background-image:url('../image/social-icon/about_icon_rss.png');			}		
+			ul.social-list-2 li.social-rss			{ background-image:url('../image/social-icon/about_icon_rss.png');			}
 			ul.social-list-2 li.social-xing			{ background-image:url('../image/social-icon/about_icon_xing.png');			}
 
 ul.social-list-2 li.social-skype {
     background-image: url('../image/social-icon/icon_skype.png');
 }
 			ul.social-list-2 li.social-flickr		{ background-image:url('../image/social-icon/about_icon_flickr.png');		}
-			ul.social-list-2 li.social-google		{ background-image:url('../image/social-icon/about_icon_google.png');		}	
+			ul.social-list-2 li.social-google		{ background-image:url('../image/social-icon/about_icon_google.png');		}
 			ul.social-list-2 li.social-twitter		{ background-image:url('../image/social-icon/about_icon_twitter.png');		}
 			ul.social-list-2 li.social-facebook		{ background-image:url('../image/social-icon/about_icon_facebook.png');		}
 
@@ -820,7 +820,7 @@ div.header
 			background-repeat:no-repeat;
 			background-position:top left;
 		}
-		
+
 		div.header ul.header-menu li:first-child
 		{
 			margin-left:0px;
@@ -897,7 +897,7 @@ div.cascade
 			text-align:center;
 			background-position:0px 0px;
 			background-repeat:no-repeat;
-			background-image:url('../image/tab_outline.png'); 	
+			background-image:url('../image/tab_outline.png');
 		}
 
 			div.cascade ul.cascade-menu li a
@@ -905,14 +905,14 @@ div.cascade
 				margin:5px;
 				width:190px;
 				height:430px;
-				display:block; 
+				display:block;
 				background-position:0px 0px;
 				background-repeat:no-repeat;
 			}
 
 			div.cascade ul.cascade-menu li a:hover
 			{
-				background-position:0px -430px;          
+				background-position:0px -430px;
 			}
 
 				div.cascade ul.cascade-menu li a span.title,
@@ -969,7 +969,7 @@ div.cascade
 			div.cascade ul.cascade-menu li.lime-camera a            { background-image:url('../image/tab/lime_camera.png');     }
 			div.cascade ul.cascade-menu li.lime-document a          { background-image:url('../image/tab/lime_document.png');   }
 			div.cascade ul.cascade-menu li.lime-briefcase a         { background-image:url('../image/tab/lime_briefcase.png');  }
-			div.cascade ul.cascade-menu li.lime-lightbulb a         { background-image:url('../image/tab/lime_lightbulb.png');  }   
+			div.cascade ul.cascade-menu li.lime-lightbulb a         { background-image:url('../image/tab/lime_lightbulb.png');  }
 
 			div.cascade ul.cascade-menu li.orange-info a            { background-image:url('../image/tab/orange_info.png');       }
 			div.cascade ul.cascade-menu li.orange-mail a            { background-image:url('../image/tab/orange_mail.png');       }
@@ -1026,52 +1026,52 @@ div.cascade
 			div.cascade ul.cascade-menu li.yellow-briefcase a       { background-image:url('../image/tab/yellow_briefcase.png');  }
 			div.cascade ul.cascade-menu li.yellow-lightbulb a       { background-image:url('../image/tab/yellow_lightbulb.png');  }
 
-			div.cascade ul.cascade-menu li.red-img-1 a,              
+			div.cascade ul.cascade-menu li.red-img-1 a,
 			div.cascade ul.cascade-menu li.blue-img-1 a,
-			div.cascade ul.cascade-menu li.lime-img-1 a,              
-			div.cascade ul.cascade-menu li.green-img-1 a,             
-			div.cascade ul.cascade-menu li.orange-img-1 a,            
-			div.cascade ul.cascade-menu li.purple-img-1 a,           
+			div.cascade ul.cascade-menu li.lime-img-1 a,
+			div.cascade ul.cascade-menu li.green-img-1 a,
+			div.cascade ul.cascade-menu li.orange-img-1 a,
+			div.cascade ul.cascade-menu li.purple-img-1 a,
 			div.cascade ul.cascade-menu li.yellow-img-1 a,
-			div.cascade ul.cascade-menu li.turquoise-img-1 a         
+			div.cascade ul.cascade-menu li.turquoise-img-1 a
 			{
-				background-image:url('../image/tab/image_1.jpg'); 
+				background-image:url('../image/tab/image_1.jpg');
 			}
 
-			div.cascade ul.cascade-menu li.red-img-2 a,              
+			div.cascade ul.cascade-menu li.red-img-2 a,
 			div.cascade ul.cascade-menu li.blue-img-2 a,
-			div.cascade ul.cascade-menu li.lime-img-2 a,              
-			div.cascade ul.cascade-menu li.green-img-2 a,             
-			div.cascade ul.cascade-menu li.orange-img-2 a,            
-			div.cascade ul.cascade-menu li.purple-img-2 a,           
+			div.cascade ul.cascade-menu li.lime-img-2 a,
+			div.cascade ul.cascade-menu li.green-img-2 a,
+			div.cascade ul.cascade-menu li.orange-img-2 a,
+			div.cascade ul.cascade-menu li.purple-img-2 a,
 			div.cascade ul.cascade-menu li.yellow-img-2 a,
-			div.cascade ul.cascade-menu li.turquoise-img-2 a         
+			div.cascade ul.cascade-menu li.turquoise-img-2 a
 			{
-				background-image:url('../image/tab/image_2.jpg'); 
+				background-image:url('../image/tab/image_2.jpg');
 			}
 
-			div.cascade ul.cascade-menu li.red-img-3 a,              
+			div.cascade ul.cascade-menu li.red-img-3 a,
 			div.cascade ul.cascade-menu li.blue-img-3 a,
-			div.cascade ul.cascade-menu li.lime-img-3 a,              
-			div.cascade ul.cascade-menu li.green-img-3 a,             
-			div.cascade ul.cascade-menu li.orange-img-3 a,            
-			div.cascade ul.cascade-menu li.purple-img-3 a,           
+			div.cascade ul.cascade-menu li.lime-img-3 a,
+			div.cascade ul.cascade-menu li.green-img-3 a,
+			div.cascade ul.cascade-menu li.orange-img-3 a,
+			div.cascade ul.cascade-menu li.purple-img-3 a,
 			div.cascade ul.cascade-menu li.yellow-img-3 a,
-			div.cascade ul.cascade-menu li.turquoise-img-3 a         
+			div.cascade ul.cascade-menu li.turquoise-img-3 a
 			{
-				background-image:url('../image/tab/image_3.jpg'); 
+				background-image:url('../image/tab/image_3.jpg');
 			}
 
-			div.cascade ul.cascade-menu li.red-img-4 a,              
+			div.cascade ul.cascade-menu li.red-img-4 a,
 			div.cascade ul.cascade-menu li.blue-img-4 a,
-			div.cascade ul.cascade-menu li.lime-img-4 a,              
-			div.cascade ul.cascade-menu li.green-img-4 a,             
-			div.cascade ul.cascade-menu li.orange-img-4 a,            
-			div.cascade ul.cascade-menu li.purple-img-4 a,           
+			div.cascade ul.cascade-menu li.lime-img-4 a,
+			div.cascade ul.cascade-menu li.green-img-4 a,
+			div.cascade ul.cascade-menu li.orange-img-4 a,
+			div.cascade ul.cascade-menu li.purple-img-4 a,
 			div.cascade ul.cascade-menu li.yellow-img-4 a,
-			div.cascade ul.cascade-menu li.turquoise-img-4 a         
+			div.cascade ul.cascade-menu li.turquoise-img-4 a
 			{
-				background-image:url('../image/tab/image_4.jpg'); 
+				background-image:url('../image/tab/image_4.jpg');
 			}
 
 		/**********************************************************************/
@@ -1089,7 +1089,7 @@ div.cascade
 			padding-top:6px;
 			position:absolute;
 		}
-		
+
 		div.cascade div.cascade-window.cascade-window-prealoder
 		{
 			background:url('../image/preloader.gif') 50% 50% no-repeat;
@@ -1110,14 +1110,14 @@ div.cascade
 				height:3px;
 			}
 
-			div.cascade div.cascade-window.red div.cascade-window-close-bar         { background-color:#D04519; }        
+			div.cascade div.cascade-window.red div.cascade-window-close-bar         { background-color:#D04519; }
 			div.cascade div.cascade-window.blue div.cascade-window-close-bar        { background-color:#00A4CD; }
 			div.cascade div.cascade-window.lime div.cascade-window-close-bar        { background-color:#8BB300; }
 			div.cascade div.cascade-window.green div.cascade-window-close-bar       { background-color:#53B123; }
 			div.cascade div.cascade-window.yellow div.cascade-window-close-bar      { background-color:#EBB100; }
 			div.cascade div.cascade-window.orange div.cascade-window-close-bar      { background-color:#D75902; }
 			div.cascade div.cascade-window.purple div.cascade-window-close-bar      { background-color:#B1457B; }
-			div.cascade div.cascade-window.turquoise div.cascade-window-close-bar 	{ background-color:#00B8BA; }        
+			div.cascade div.cascade-window.turquoise div.cascade-window-close-bar 	{ background-color:#00B8BA; }
 
 				div.cascade div.cascade-window div.cascade-window-close-bar a
 				{
@@ -1150,17 +1150,17 @@ div.cascade
 
 			/******************************************************************/
 			/* Cascade / Window / Content									  */
-			/******************************************************************/			
+			/******************************************************************/
 
 			div.cascade div.cascade-window div.cascade-window-content
 			{
 				width:600px;
-				height:415px;	
+				height:415px;
 				overflow:hidden;
 				padding-right:10px;
 				margin:10px 0px 10px 0px;
-			}	
-			
+			}
+
 				div.cascade div.cascade-window div.cascade-page
 				{
 					width:590px;
@@ -1169,19 +1169,19 @@ div.cascade
 
 			/******************************************************************/
 			/* Cascade / Window / Footer						              */
-			/******************************************************************/					
+			/******************************************************************/
 
 			div.cascade div.cascade-window div.cascade-window-footer
 			{
 				top:-22px;
 				height:53px;
 				position:relative;
-				background:url('../image/content_footer_610.png') 0px 0px no-repeat; 	
-			}	
+				background:url('../image/content_footer_610.png') 0px 0px no-repeat;
+			}
 
 	/**************************************************************************/
 	/* Cascade / Navigation													  */
-	/**************************************************************************/	
+	/**************************************************************************/
 
 	div.cascade a.cascade-navigation
 	{
@@ -1193,7 +1193,7 @@ div.cascade
 		position:absolute;
 		background-repeat:no-repeat;
 		background-position:0px 0px;
-	}			
+	}
 
 	div.cascade a.cascade-navigation:hover
 	{
@@ -1212,7 +1212,7 @@ div.cascade
 		{
 			right:-50px;
 			background-image:url('../image/content_nav_right.png');
-		}		
+		}
 
 /******************************************************************************/
 /* Footer																      */
@@ -1256,8 +1256,8 @@ div.footer
 			margin:0px;
 			padding:0px;
 			margin-left:35px;
-			list-style-type:none;				
-			border-left:solid 1px #343434; 
+			list-style-type:none;
+			border-left:solid 1px #343434;
 		}
 
 			div.footer div.main div.latest-tweets #latest-tweets ul li

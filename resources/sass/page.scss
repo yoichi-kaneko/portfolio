@@ -1,0 +1,345 @@
+/******************************************************************************/
+/* Page																		  */
+/******************************************************************************/
+
+/**********************************************************************/
+/* Slider                                                             */
+/**********************************************************************/
+
+#slider {
+    width: 290px;
+}
+
+#sliderBox {
+    width: 290px;
+    float: right;
+    height: 360px;
+    background: url('../assets/images/preloader.gif') center center no-repeat;
+}
+
+#slider {
+    height: 320px;
+
+    img {
+        display: none;
+    }
+}
+
+div {
+    &.nivo-controlNav {
+        margin-top: -10px;
+        text-align: center;
+
+        a.nivo-control {
+            width: 11px;
+            height: 11px;
+            font-size: 0px;
+            margin-left: 5px;
+            text-align: center;
+            color: transparent;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-image: url('../assets/images/slider_navigation.png');
+
+            &:first-child {
+                margin-left: 0px;
+            }
+
+            &:hover, &.active {
+                text-decoration: none;
+                background-position: 0px -11px;
+            }
+        }
+    }
+
+    &.gallery-list-wrapper {
+        width: 550px;
+        overflow: hidden;
+    }
+}
+
+/**************************************************************************/
+/* Gallery                                                                */
+/**************************************************************************/
+
+/**********************************************************************/
+/* Gallery / List                                                     */
+/**********************************************************************/
+
+ul {
+    &.gallery-list {
+        width: 555px;
+        overflow: hidden;
+        margin-top: 10px;
+
+        li {
+            width: 180px;
+            height: 130px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+
+            &.left, &.center {
+                float: left;
+            }
+
+            &.left {
+                clear: both;
+            }
+
+            &.right {
+                float: right;
+            }
+        }
+    }
+
+    &.filter-list {
+        margin-bottom: 20px;
+
+        li {
+            float: left;
+            margin-right: 2px;
+            margin-bottom: 2px;
+
+            a {
+                display: block;
+                text-align: center;
+                padding: 7px 10px 7px 10px;
+                border: solid 1px #343434;
+
+                &:hover, &.selected {
+                    border-color: #000000;
+                }
+            }
+        }
+    }
+}
+
+/**********************************************************************/
+/* Gallery / Filter list                                              */
+/**********************************************************************/
+
+/**********************************************************************/
+/* Gallery / Filter select box                                        */
+/**********************************************************************/
+
+select.filter-select-box {
+    width: 180px;
+    border: none;
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+/**************************************************************************/
+/* Skill List                                                             */
+/* Careerlist                                                             */
+/**************************************************************************/
+
+ul {
+    &.skill-list li h5 {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    &.career-list li {
+        h5 {
+            margin: 0px;
+            font-size: 15px;
+        }
+
+        margin-top: 15px;
+
+        p {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+    }
+
+    &.skill-list {
+        clear: both;
+
+        li {
+            margin-top: 15px;
+
+            div {
+                &.skill-list-item-level {
+                    width: 92px;
+                    float: right;
+                    margin-top: -18px;
+
+                    span {
+                        opacity: 0;
+                        float: left;
+                        width: 16px;
+                        height: 16px;
+                        display: block;
+                        margin-left: 3px;
+                        background-repeat: no-repeat;
+                        background-position: 0px -16px;
+                        background-image: url('../assets/images/skill_icon.png');
+                        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+                        /* #filter:alpha(opacity=0); */
+
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+
+                        &.skill-list-item-level-off {
+                            background-position: 0px 0px;
+                        }
+                    }
+                }
+
+                &.skill-list-item-period {
+                    margin-top: 5px;
+                    padding-top: 5px;
+                    border-top: solid 1px #343434;
+                }
+            }
+        }
+    }
+}
+
+/**********************************************************************/
+/* Career List                                                        */
+/**********************************************************************/
+
+/**********************************************************************/
+/* Skill List                                                         */
+/**********************************************************************/
+
+/**************************************************************************/
+/* Google Map                                                             */
+/**************************************************************************/
+
+#map {
+    width: 100%;
+    height: 150px;
+
+    a {
+        font-size: 11px;
+        text-decoration: none !important;
+    }
+}
+
+/**************************************************************************/
+/* Contact List                                                           */
+/**************************************************************************/
+
+ul {
+    &.contact-list li {
+        line-height: 150%;
+        margin-bottom: 2px;
+        padding-left: 25px;
+        background-repeat: no-repeat;
+        background-position: center left;
+
+        &.contact-list-fax {
+            background-image: url('../assets/images/contact_icon_fax.png');
+        }
+
+        &.contact-list-mail {
+            background-image: url('../assets/images/contact_icon_mail.png');
+        }
+
+        &.contact-list-phone {
+            background-image: url('../assets/images/contact_icon_phone.png');
+        }
+    }
+
+    &.feature-list {
+        margin-top: 30px;
+
+        li {
+            margin-bottom: 30px;
+
+            h3 {
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin: 0px;
+                min-width: 48px;
+                min-height: 48px;
+                padding: 00px 0px 0px 60px;
+                background-repeat: no-repeat;
+                background-position: 0px -5px;
+            }
+
+            &.feature-list-icon-rss p {
+                background-image: url('../assets/images/feature-icon/icon_rss.png');
+            }
+
+            &.feature-list-icon-chat p {
+                background-image: url('../assets/images/feature-icon/icon_chat.png');
+            }
+
+            &.feature-list-icon-clock p {
+                background-image: url('../assets/images/feature-icon/icon_clock.png');
+            }
+
+            &.feature-list-icon-users p {
+                background-image: url('../assets/images/feature-icon/icon_users.png');
+            }
+
+            &.feature-list-icon-basket p {
+                background-image: url('../assets/images/feature-icon/icon_basket.png');
+            }
+
+            &.feature-list-icon-briefcase p {
+                background-image: url('../assets/images/feature-icon/icon_briefcase.png');
+            }
+
+            &.feature-list-icon-swarm p {
+                background-image: url('../assets/images/feature-icon/icon_swarm.png');
+            }
+
+            &.feature-list-icon-untappd p {
+                background-image: url('../assets/images/feature-icon/icon_untappd.png');
+            }
+
+            &.feature-list-icon-torii p {
+                background-image: url('../assets/images/feature-icon/icon_torii.png');
+            }
+
+            &.feature-list-icon-mountain p {
+                background-image: url('../assets/images/feature-icon/icon_mountain.png');
+            }
+
+            &.feature-list-icon-kosenjo p {
+                background-image: url('../assets/images/feature-icon/icon_kosenjo.png');
+            }
+        }
+    }
+}
+
+/**************************************************************************/
+/* Feature List                                                           */
+/**************************************************************************/
+
+/**************************************************************************/
+/* Portfolio List                                                           */
+/**************************************************************************/
+
+div.fancybox-inner {
+    h2 {
+        font-size: 20pt;
+        color: #444444;
+    }
+
+    h3 {
+        font-size: 16pt;
+        color: #444444;
+    }
+
+    ul {
+        list-style-type: square;
+        margin-left: 20px;
+    }
+}
