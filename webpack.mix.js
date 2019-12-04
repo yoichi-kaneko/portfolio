@@ -15,3 +15,5 @@ const glob = require('glob');
 glob.sync('resources/sass/responsive/*.scss').map(function(file) {
     mix.sass(file, 'public/css/responsive');
 });
+mix.copyDirectory('resources/assets/image', 'public/image');
+
