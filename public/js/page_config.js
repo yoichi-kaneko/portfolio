@@ -2,7 +2,7 @@ title = $('title').html();
 
 var page={
     "about": {
-        "js": "",
+        "js": "about.js",
         "tab": "tab-1",
         "html": "about",
         "main": 1,
@@ -16,7 +16,7 @@ var page={
         "title": title + " - Portfolio"
     },
     "resume": {
-        "js": "",
+        "js": "resume.js",
         "tab": "tab-3",
         "html": "resume",
         "main": 1,
