@@ -13,6 +13,7 @@ public/css/responsive
 public/image
 public/images
 public/css/page.css
+public/css/vendors.css
 public/js
 storage/*.key
 .env.*.php
