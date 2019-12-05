@@ -20,7 +20,6 @@ glob.sync('resources/sass/responsive/*.scss').map(function(file) {
 mix.copyDirectory('resources/assets/image', 'public/image');
 
 mix.js('resources/js/vendors.js', 'public/js')
-    .js('resources/js/jquery.captify.js', 'public/js')
     .js('resources/js/page_config.js', 'public/js')
     .js('resources/js/cascade.js', 'public/js')
     .js('resources/js/script.js', 'public/js');
