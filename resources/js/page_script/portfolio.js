@@ -39,14 +39,16 @@ $('.gallery-list li').hover(
 
 $(window).resize(function()
 {
-    var grid = new Isotope(
-        '.gallery-list',{
-            masonry			: {columnWidth:185},
-            resizable		: false,
-            itemSelector	: 'li',
-            animationEngine : 'jquery'
-        }
-    );
+    if($('.gallery-list').length > 0) {
+        var grid = new Isotope(
+            '.gallery-list',{
+                masonry			: {columnWidth:185},
+                resizable		: false,
+                itemSelector	: 'li',
+                animationEngine : 'jquery'
+            }
+        );
+    }
 });
 
 $('.filter-list li a').bind('click',function(e)

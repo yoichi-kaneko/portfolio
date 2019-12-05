@@ -50,11 +50,13 @@ function filterGallery(e,object)
 		if(value[i].indexOf('filter-')!=-1) filter+=' .'+value[i];
 	}
 
-    var $grid = new Isotope('.gallery-list',
-        {
-            filter			:	filter,
-            animationEngine	:	'jquery'
-        });
+	if($('.gallery-list').length > 0) {
+        var $grid = new Isotope('.gallery-list',
+            {
+                filter: filter,
+                animationEngine: 'jquery'
+            });
+    }
 
 	$('.gallery-list .fancybox-image').each(function()
 	{
