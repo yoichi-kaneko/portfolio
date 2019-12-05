@@ -9,11 +9,9 @@ app/storage/
 # Laravel 5 & Lumen specific
 public/storage
 public/hot
-public/css/responsive
+public/css
 public/image
 public/images
-public/css/page.css
-public/css/vendors.css
 public/js
 public/page_script
 storage/*.key
