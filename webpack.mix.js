@@ -26,7 +26,6 @@ mix.js('resources/js/vendors.js', 'public/js')
     .js('resources/js/script.js', 'public/js');
 
 mix.copy('resources/js/jquery-migrate.min.js', 'public/js/jquery-migrate.min.js');
-mix.copy('resources/js/jquery.easing.js', 'public/js/jquery.easing.js');
 mix.copy('resources/js/jquery.blockUI.js', 'public/js/jquery.blockUI.js');
 mix.copy('resources/js/jquery.ba-bqq.min.js', 'public/js/jquery.ba-bqq.min.js');
 mix.copy('resources/js/jquery.nivo.slider.pack.js', 'public/js/jquery.nivo.slider.pack.js');

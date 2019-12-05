@@ -53,13 +53,14 @@ $('.gallery-list li').hover(
 
 $(window).resize(function()
 {
-	$('.gallery-list').isotope(
-	{
-		masonry			: {columnWidth:185},
-		resizable		: false,
-		itemSelector	: 'li',
-		animationEngine : 'jquery'
-	});
+    var grid = new Isotope(
+        '.gallery-list',{
+            masonry			: {columnWidth:185},
+            resizable		: false,
+            itemSelector	: 'li',
+            animationEngine : 'jquery'
+        }
+    );
 });
 
 $('.filter-list li a').bind('click',function(e)
