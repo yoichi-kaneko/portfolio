@@ -31,4 +31,3 @@ glob.sync('resources/js/page_script/*.js').map(function(file) {
 });
 
 mix.copy('resources/js/jquery.nivo.slider.pack.js', 'public/js/jquery.nivo.slider.pack.js');
-mix.copy('resources/js/jquery.carouFredSel.packed.js', 'public/js/jquery.carouFredSel.packed.js');

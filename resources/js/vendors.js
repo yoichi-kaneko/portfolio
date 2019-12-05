@@ -5,8 +5,8 @@ require('linkifyjs');
 require('infieldLabel');
 require('fancybox')($);
 require('jquery.easing');
-require('jquery-bbq');
 require('jquery-blockui');
+require('caroufredsel');
 
 import 'qtip2/dist/jquery.qtip';
 import 'jscrollpane/script/jquery.jscrollpane';

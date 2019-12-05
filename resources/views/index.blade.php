@@ -26,7 +26,6 @@
     {{Html::script('js/jquery.captify.js')}}
 
     {{Html::script('js/jquery.nivo.slider.pack.js')}}
-    {{Html::script('js/jquery.carouFredSel.packed.js')}}
     {{Html::script('js/script.js')}}
     {{Html::script('js/cascade.js')}}
 @if ($is_production)
