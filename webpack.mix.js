@@ -12,8 +12,10 @@ const glob = require('glob');
  |
  */
 
-mix.sass('resources/sass/page.scss', 'public/css');
-mix.sass('resources/sass/vendors.scss', 'public/css');
+mix.sass('resources/sass/page.scss', 'public/css')
+    .sass('resources/sass/base.scss', 'public/css')
+    .sass('resources/sass/vendors.scss', 'public/css');
+
 glob.sync('resources/sass/responsive/*.scss').map(function(file) {
     mix.sass(file, 'public/css/responsive');
 });

@@ -9,7 +9,6 @@
     <meta name="description" content="金子陽一のポートフォリオページ"/>
 
     {{Html::style('css/vendors.css')}}
-    {{Html::style('css/jquery.captify.css')}}
     {{Html::style('css/base.css')}}
     {{Html::style('css/page.css')}}
 
@@ -22,8 +21,6 @@
     {{Html::style('css/responsive/width-0-479.css', ['media' => 'screen and (min-width:0px) and (max-width:479px)'])}}
 
     {{Html::script('js/vendors.js')}}
-    {{Html::script('js/jquery.captify.js')}}
-
     {{Html::script('js/script.js')}}
     {{Html::script('js/cascade.js')}}
 @if ($is_production)
