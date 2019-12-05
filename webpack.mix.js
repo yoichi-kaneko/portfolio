@@ -32,6 +32,3 @@ mix.copy('resources/js/jquery.blockUI.js', 'public/js/jquery.blockUI.js');
 mix.copy('resources/js/jquery.ba-bqq.min.js', 'public/js/jquery.ba-bqq.min.js');
 mix.copy('resources/js/jquery.nivo.slider.pack.js', 'public/js/jquery.nivo.slider.pack.js');
 mix.copy('resources/js/jquery.carouFredSel.packed.js', 'public/js/jquery.carouFredSel.packed.js');
-mix.copy('resources/js/jquery.fancybox.js', 'public/js/jquery.fancybox.js');
-mix.copy('resources/js/jquery.fancybox-media.js', 'public/js/jquery.fancybox-media.js');
-mix.copy('resources/js/jquery.fancybox-buttons.js', 'public/js/jquery.fancybox-buttons.js');

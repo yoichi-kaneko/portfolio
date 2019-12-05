@@ -11,8 +11,6 @@
     {{Html::style('css/nivo-slider.css')}}
     {{Html::style('css/vendors.css')}}
     {{Html::style('css/jquery.captify.css')}}
-    {{Html::style('css/fancybox/jquery.fancybox.css')}}
-    {{Html::style('css/fancybox/helpers/jquery.fancybox-buttons.css')}}
     {{Html::style('css/base.css')}}
     {{Html::style('css/page.css')}}
 
@@ -34,11 +32,6 @@
     {{Html::script('js/jquery.ba-bqq.min.js')}}
     {{Html::script('js/jquery.nivo.slider.pack.js')}}
     {{Html::script('js/jquery.carouFredSel.packed.js')}}
-
-    {{Html::script('js/jquery.fancybox.js')}}
-    {{Html::script('js/jquery.fancybox-media.js')}}
-    {{Html::script('js/jquery.fancybox-buttons.js')}}
-
     {{Html::script('js/script.js')}}
     {{Html::script('js/cascade.js')}}
 @if ($is_production)

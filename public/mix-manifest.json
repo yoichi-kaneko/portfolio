@@ -18,8 +18,5 @@
     "/js/jquery.blockUI.js": "/js/jquery.blockUI.js",
     "/js/jquery.ba-bqq.min.js": "/js/jquery.ba-bqq.min.js",
     "/js/jquery.nivo.slider.pack.js": "/js/jquery.nivo.slider.pack.js",
-    "/js/jquery.carouFredSel.packed.js": "/js/jquery.carouFredSel.packed.js",
-    "/js/jquery.fancybox.js": "/js/jquery.fancybox.js",
-    "/js/jquery.fancybox-media.js": "/js/jquery.fancybox-media.js",
-    "/js/jquery.fancybox-buttons.js": "/js/jquery.fancybox-buttons.js"
+    "/js/jquery.carouFredSel.packed.js": "/js/jquery.carouFredSel.packed.js"
 }
