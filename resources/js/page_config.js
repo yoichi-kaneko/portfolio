@@ -9,7 +9,7 @@ global.page={
         "title": title + " - About"
     },
     "portfolio": {
-        "js": "",
+        "js": "portfolio.js",
         "tab": "tab-2",
         "html": "portfolio",
         "main": 1,
