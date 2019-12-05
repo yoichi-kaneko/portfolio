@@ -28,5 +28,3 @@ mix.js('resources/js/vendors.js', 'public/js')
 glob.sync('resources/js/page_script/*.js').map(function(file) {
     mix.js(file, 'public/page_script');
 });
-
-mix.copy('resources/js/jquery.nivo.slider.pack.js', 'public/js/jquery.nivo.slider.pack.js');

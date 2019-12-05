@@ -8,7 +8,6 @@
     <meta name="keywords" content="portfolio, developer, php, freelance"/>
     <meta name="description" content="金子陽一のポートフォリオページ"/>
 
-    {{Html::style('css/nivo-slider.css')}}
     {{Html::style('css/vendors.css')}}
     {{Html::style('css/jquery.captify.css')}}
     {{Html::style('css/base.css')}}
@@ -25,7 +24,6 @@
     {{Html::script('js/vendors.js')}}
     {{Html::script('js/jquery.captify.js')}}
 
-    {{Html::script('js/jquery.nivo.slider.pack.js')}}
     {{Html::script('js/script.js')}}
     {{Html::script('js/cascade.js')}}
 @if ($is_production)

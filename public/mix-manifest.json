@@ -14,6 +14,5 @@
     "/page_script/about.js": "/page_script/about.js",
     "/page_script/main.js": "/page_script/main.js",
     "/page_script/portfolio.js": "/page_script/portfolio.js",
-    "/page_script/resume.js": "/page_script/resume.js",
-    "/js/jquery.nivo.slider.pack.js": "/js/jquery.nivo.slider.pack.js"
+    "/page_script/resume.js": "/page_script/resume.js"
 }
