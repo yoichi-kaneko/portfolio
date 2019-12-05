@@ -23,7 +23,6 @@
     {{Html::style('css/responsive/width-0-479.css', ['media' => 'screen and (min-width:0px) and (max-width:479px)'])}}
 
     {{Html::script('js/vendors.js')}}
-    {{Html::script('js/jquery-migrate.min.js')}}
     {{Html::script('js/jquery.captify.js')}}
     {{Html::script('js/jquery.blockUI.js')}}
 

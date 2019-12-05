@@ -532,7 +532,7 @@
 
             url=url.substring(0,url.length-1).replace(/"/ig,'');
 
-            if($.browser.msie) image.attr('src',url+'?i='+window.getRandom(1,10000));
+            if($.support.msie) image.attr('src',url+'?i='+window.getRandom(1,10000));
             else image.attr('src',url);
 
             return(image);

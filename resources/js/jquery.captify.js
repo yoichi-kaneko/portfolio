@@ -68,7 +68,7 @@ jQuery.fn.extend({
 					$('*', wrapper).css({ margin: 0 }).show();
 
 					//ensure the background is on bottom
-					var captionPositioning = jQuery.browser.msie ? 'static' : 'relative';
+					var captionPositioning = jQuery.support.msie ? 'static' : 'relative';
 					caption.css({
 						zIndex: 1,
 						position: captionPositioning,
@@ -95,7 +95,7 @@ jQuery.fn.extend({
 					caption.height(captionContent.height());
 
 					// represents caption margin positioning for hide and show states
-					var topBorderAdj = o.position == 'bottom' && jQuery.browser.msie ? 1 : 0;
+					var topBorderAdj = o.position == 'bottom' && jQuery.support.msie ? 1 : 0;
 					var captionPosition = o.position == 'top'
 					   ? { hide: -$(img).height() - caption.outerHeight() - 1, show: -$(img).height() }
 					   : { hide: 0, show: -caption.outerHeight() + topBorderAdj };
