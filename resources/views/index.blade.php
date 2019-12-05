@@ -24,7 +24,6 @@
 
     {{Html::script('js/vendors.js')}}
     {{Html::script('js/jquery.captify.js')}}
-    {{Html::script('js/jquery.blockUI.js')}}
 
     {{Html::script('js/jquery.nivo.slider.pack.js')}}
     {{Html::script('js/jquery.carouFredSel.packed.js')}}

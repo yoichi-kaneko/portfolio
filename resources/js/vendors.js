@@ -6,6 +6,7 @@ require('infieldLabel');
 require('fancybox')($);
 require('jquery.easing');
 require('jquery-bbq');
+require('jquery-blockui');
 
 import 'qtip2/dist/jquery.qtip';
 import 'jscrollpane/script/jquery.jscrollpane';

@@ -29,6 +29,7 @@
         "infieldLabel": "^1.1.0",
         "isotope-layout": "^3.0.6",
         "jquery-bbq": "^1.0.0",
+        "jquery-blockui": "^2.7.0",
         "jquery-migrate": "^3.1.0",
         "jquery-mousewheel": "^3.1.13",
         "jquery.easing": "^1.4.1",
