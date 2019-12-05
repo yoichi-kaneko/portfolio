@@ -37,6 +37,3 @@ mix.copy('resources/js/jquery.carouFredSel.packed.js', 'public/js/jquery.carouFr
 mix.copy('resources/js/jquery.fancybox.js', 'public/js/jquery.fancybox.js');
 mix.copy('resources/js/jquery.fancybox-media.js', 'public/js/jquery.fancybox-media.js');
 mix.copy('resources/js/jquery.fancybox-buttons.js', 'public/js/jquery.fancybox-buttons.js');
-
-mix.copy('resources/js/jquery.jScrollPane.js', 'public/js/jquery.jScrollPane.js');
-// mix.copy('resources/js/jquery.qtip.min.js', 'public/js/jquery.qtip.min.js');

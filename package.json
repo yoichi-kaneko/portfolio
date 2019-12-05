@@ -25,6 +25,9 @@
     },
     "dependencies": {
         "glob": "^7.1.6",
+        "infieldLabel": "^1.1.0",
+        "jquery-mousewheel": "^3.1.13",
+        "jscrollpane": "^2.2.1",
         "linkifyjs": "^2.1.8",
         "qtip": "0.0.4",
         "qtip2": "^3.0.3"

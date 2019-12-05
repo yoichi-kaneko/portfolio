@@ -11,7 +11,6 @@
     {{Html::style('css/nivo-slider.css')}}
     {{Html::style('css/vendors.css')}}
     {{Html::style('css/jquery.captify.css')}}
-    {{Html::style('css/jquery.jScrollPane.css')}}
     {{Html::style('css/fancybox/jquery.fancybox.css')}}
     {{Html::style('css/fancybox/helpers/jquery.fancybox-buttons.css')}}
     {{Html::style('css/base.css')}}
@@ -33,7 +32,6 @@
     {{Html::script('js/jquery.blockUI.js')}}
 
     {{Html::script('js/jquery.ba-bqq.min.js')}}
-    {{Html::script('js/jquery.jScrollPane.js')}}
     {{Html::script('js/jquery.mousewheel.min.js')}}
     {{Html::script('js/jquery.nivo.slider.pack.js')}}
     {{Html::script('js/jquery.infieldlabel.min.js')}}
