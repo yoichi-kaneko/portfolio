@@ -31,6 +31,5 @@ glob.sync('resources/js/page_script/*.js').map(function(file) {
 
 mix.copy('resources/js/jquery-migrate.min.js', 'public/js/jquery-migrate.min.js');
 mix.copy('resources/js/jquery.blockUI.js', 'public/js/jquery.blockUI.js');
-mix.copy('resources/js/jquery.ba-bqq.min.js', 'public/js/jquery.ba-bqq.min.js');
 mix.copy('resources/js/jquery.nivo.slider.pack.js', 'public/js/jquery.nivo.slider.pack.js');
 mix.copy('resources/js/jquery.carouFredSel.packed.js', 'public/js/jquery.carouFredSel.packed.js');

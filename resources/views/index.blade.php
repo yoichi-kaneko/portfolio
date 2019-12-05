@@ -27,7 +27,6 @@
     {{Html::script('js/jquery.captify.js')}}
     {{Html::script('js/jquery.blockUI.js')}}
 
-    {{Html::script('js/jquery.ba-bqq.min.js')}}
     {{Html::script('js/jquery.nivo.slider.pack.js')}}
     {{Html::script('js/jquery.carouFredSel.packed.js')}}
     {{Html::script('js/script.js')}}
