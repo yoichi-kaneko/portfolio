@@ -7,3 +7,4 @@ require('fancybox')($);
 import 'qtip2/dist/jquery.qtip';
 import 'jscrollpane/script/jquery.jscrollpane';
 import 'jquery-mousewheel';
+import 'isotope-layout';

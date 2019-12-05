@@ -25,7 +25,6 @@
     {{Html::script('js/vendors.js')}}
     {{Html::script('js/jquery-migrate.min.js')}}
     {{Html::script('js/jquery.easing.js')}}
-    {{Html::script('js/jquery.isotope.js')}}
     {{Html::script('js/jquery.captify.js')}}
     {{Html::script('js/jquery.blockUI.js')}}
 
