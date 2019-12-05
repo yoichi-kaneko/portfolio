@@ -15,6 +15,7 @@ public/images
 public/css/page.css
 public/css/vendors.css
 public/js
+public/page_script
 storage/*.key
 .env.*.php
 .env.php
