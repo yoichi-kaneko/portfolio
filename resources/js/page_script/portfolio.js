@@ -65,7 +65,11 @@ $('.filter-select-box').bind('change',function(e)
 $('.fancybox-iframe').fancybox(
     {
         type: 'ajax',
-        arrows: false
-        // helpers					:	helpers
+        arrows: false,
+        afterShow: function() {
+            if (analytics_code) {
+                gtag('event', 'load_portfolio', {'href': $(this).attr('href')});
+            }
+        }
     });
 
