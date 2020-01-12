@@ -68,7 +68,7 @@ $('.fancybox-iframe').fancybox(
         arrows: false,
         afterShow: function() {
             if (analytics_code) {
-                gtag('event', 'load_portfolio', {'href': $(this).attr('href')});
+                gtag('event', 'load_portfolio', {'event_category': $(this).attr('href')});
             }
         }
     });
