@@ -14,3 +14,16 @@
     <br />
     Powered By: <a href="https://mapicons.mapsmarker.com" target="_blank"><img src="{{ asset('/image/miclogo-88x31.gif') }}"></a>
 </div>
+
+<script id="map_window" type="text/x-jsrender">
+    <div class="map">
+        <h3>@{{:name}}</h3>
+        <span><b>@{{:date}}</b>&nbsp; @{{:description}}</span>
+        @{{if url}}
+          <br>
+          <div style="text-align: right; text-decoration: underline;">
+            <a href="@{{:url}}" target="_blank">詳細はこちら</a>
+          </div>
+        @{{/if}}
+    </div>
+</script>

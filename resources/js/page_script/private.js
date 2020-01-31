@@ -37,8 +37,15 @@ function addMarker(markers) {
                 url: 'image/map_icon.png',
             }
         });
+        let tmpl = $('#map_window').render({
+            index: index,
+            name: value.name,
+            date: moment(value.date).format('YYYY-MM-DD'),
+            description: value.description,
+            url: value.url,
+        });
         infoWindow[index] = new google.maps.InfoWindow({
-            content: '<div class="map">' + value.name + '</div>'
+            content: tmpl
         });
         marker[index].addListener('click', function() { // マーカーをクリックしたとき
             if (activeInfoWindow) {
