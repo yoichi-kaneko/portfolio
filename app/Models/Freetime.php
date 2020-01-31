@@ -29,6 +29,10 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Freetime whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Freetime whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property string $code
+ * @property string|null $url
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Freetime whereCode($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Freetime whereUrl($value)
  */
 class Freetime extends Model
 {
