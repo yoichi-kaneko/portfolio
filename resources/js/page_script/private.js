@@ -45,13 +45,15 @@ function addMarker(markers) {
             url: value.url,
         });
         infoWindow[index] = new google.maps.InfoWindow({
-            content: tmpl
+            content: tmpl,
+            disableAutoPan: true,
         });
         marker[index].addListener('click', function() { // マーカーをクリックしたとき
             if (activeInfoWindow) {
                 activeInfoWindow.close();
             }
             infoWindow[index].open(map, marker[index]); // 吹き出しの表示
+            moveCenter(index);
             activeInfoWindow = infoWindow[index];
         });
         google.maps.event.addListener(map, 'click', function() {
@@ -60,6 +62,12 @@ function addMarker(markers) {
             }
         });
     });
+}
+
+function moveCenter(index) {
+    let position = marker[index].getPosition();
+    map.panTo(position);
+    map.setZoom(8);
 }
 
 initGoogleMap();
