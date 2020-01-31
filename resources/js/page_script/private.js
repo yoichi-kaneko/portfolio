@@ -32,7 +32,10 @@ function addMarker(markers) {
         let latLng = new google.maps.LatLng(value.latitude, value.longitude);
         marker[index] = new google.maps.Marker({
             position: latLng,
-            map: map
+            map: map,
+            icon: {
+                url: 'image/map_icon.png',
+            }
         });
         infoWindow[index] = new google.maps.InfoWindow({
             content: '<div class="map">' + value.name + '</div>'
