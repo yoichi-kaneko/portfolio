@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property string $name
  * @property string $date
+ * @property string|null $url
  * @property float $latitude
  * @property float $longitude
  * @property string|null $description
@@ -28,6 +29,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Mountain whereLongitude($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Mountain whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Mountain whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Mountain whereUrl($value)
  * @mixin \Eloquent
  */
 class Mountain extends Model

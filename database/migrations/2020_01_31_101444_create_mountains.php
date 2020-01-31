@@ -17,6 +17,7 @@ class CreateMountains extends Migration
             $table->increments('id');
             $table->string('name', 100);
             $table->date('date');
+            $table->string('url', 64)->nullable();
             $table->decimal('latitude', 9, 6);
             $table->decimal('longitude', 9, 6);
             $table->text('description')->nullable();
