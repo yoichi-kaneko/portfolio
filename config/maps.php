@@ -1,8 +1,15 @@
 <?php
 return [
     'center' => [
-        'lat' => 35.695464,
-        'lng' => 139.547165,
+        'lat' => 36.931689,
+        'lng' => 136.242343,
     ],
-    'zoom' => 10
+    'zoom' => 6,
+    'mapTypeId' => 'hybrid',
+    'mapTypeControl' => false,
+    'scaleControl' => true,
+    'zoomControlOptions' => [
+        'position' => 1
+    ],
+    'streetViewControl' => true,
 ];

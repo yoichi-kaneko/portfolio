@@ -8,9 +8,9 @@
     <meta name="keywords" content="portfolio, developer, php, freelance"/>
     <meta name="description" content="金子陽一のポートフォリオページ"/>
 
-    {{Html::style('css/vendors.css')}}
-    {{Html::style('css/base.css')}}
-    {{Html::style('css/page.css')}}
+    <link rel="stylesheet" href="{{ mix('css/vendors.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/base.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/page.css') }}">
 
     {{Html::style('css/responsive/width-0-959.css', ['media' => 'screen and (min-width:0px) and (max-width:959px)'])}}
     {{Html::style('css/responsive/width-0-767.css', ['media' => 'screen and (min-width:0px) and (max-width:767px)'])}}
@@ -20,9 +20,9 @@
     {{Html::style('css/responsive/width-480-767.css', ['media' => 'screen and (min-width:480px) and (max-width:767px)'])}}
     {{Html::style('css/responsive/width-0-479.css', ['media' => 'screen and (min-width:0px) and (max-width:479px)'])}}
 
-    {{Html::script('js/vendors.js')}}
-    {{Html::script('js/script.js')}}
-    {{Html::script('js/cascade.js')}}
+    <script src="{{ mix('js/vendors.js') }}"></script>
+    <script src="{{ mix('js/script.js') }}"></script>
+    <script src="{{ mix('js/cascade.js') }}"></script>
 @if ($is_production)
     <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143010188-1"></script>
@@ -149,7 +149,7 @@
     &nbsp;
 </div>
 <!-- /Footer -->
-{{Html::script('js/page_config.js')}}
+<script src="{{ mix('js/page_config.js') }}"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.cascade').cascade(page, options, request);
