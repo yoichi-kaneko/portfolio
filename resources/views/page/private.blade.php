@@ -10,4 +10,5 @@
             </li>
         @endforeach
     </ul>
+    <div id="google_map" style="min-height: 350px;"></div>
 </div>

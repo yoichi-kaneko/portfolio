@@ -23,7 +23,7 @@ global.page={
         "title": title + " - Resume"
     },
     "private": {
-        "js": "",
+        "js": "private.js",
         "tab": "tab-4",
         "html": "private",
         "main": 1,

@@ -23,3 +23,4 @@ Route::get('/page/contact', 'PageController@contact');
 Route::get('/portfolio/{id}', 'PortfolioController@detail');
 Route::get('/', 'IndexController@index');
 
+Route::get('/api/map', 'Api\MapController@index');

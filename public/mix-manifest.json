@@ -15,5 +15,6 @@
     "/page_script/about.js": "/page_script/about.js",
     "/page_script/main.js": "/page_script/main.js",
     "/page_script/portfolio.js": "/page_script/portfolio.js",
+    "/page_script/private.js": "/page_script/private.js",
     "/page_script/resume.js": "/page_script/resume.js"
 }
