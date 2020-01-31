@@ -4,6 +4,7 @@ let google;
 let marker = [];
 let infoWindow = [];
 let activeInfoWindow;
+let marker_count;
 
 function initGoogleMap()
 {
@@ -28,6 +29,7 @@ function renderGoogleMap(data) {
 }
 
 function addMarker(markers) {
+    marker_count = markers.length;
     $.each(markers, function (index, value) {
         let latLng = new google.maps.LatLng(value.latitude, value.longitude);
         marker[index] = new google.maps.Marker({
@@ -49,25 +51,48 @@ function addMarker(markers) {
             disableAutoPan: true,
         });
         marker[index].addListener('click', function() { // マーカーをクリックしたとき
-            if (activeInfoWindow) {
-                activeInfoWindow.close();
-            }
-            infoWindow[index].open(map, marker[index]); // 吹き出しの表示
-            moveCenter(index);
-            activeInfoWindow = infoWindow[index];
+            showInfoWindow(index);
         });
         google.maps.event.addListener(map, 'click', function() {
             if (activeInfoWindow) {
                 activeInfoWindow.close();
             }
         });
+        google.maps.event.addListener(infoWindow[index],'domready',function(){
+            $('.move_prev').click(function() {
+                let prev_index = getPrevIndex($(this).attr('data-index'));
+                showInfoWindow(prev_index);
+            });
+            $('.move_next').click(function() {
+                let next_index = getNextIndex($(this).attr('data-index'));
+                showInfoWindow(next_index);
+            });
+        });
     });
 }
 
-function moveCenter(index) {
+function showInfoWindow(index) {
+    if (activeInfoWindow) {
+        activeInfoWindow.close();
+    }
+    infoWindow[index].open(map, marker[index]); // 吹き出しの表示
     let position = marker[index].getPosition();
     map.panTo(position);
     map.setZoom(8);
+    activeInfoWindow = infoWindow[index];
+}
+
+function getPrevIndex(index) {
+    if(parseInt(index) == 0) {
+        return marker_count - 1;
+    }
+    return parseInt(index) - 1;
+}
+function getNextIndex(index) {
+    if(parseInt(index) + 1 == marker_count) {
+        return 0;
+    }
+    return parseInt(index) + 1;
 }
 
 initGoogleMap();
