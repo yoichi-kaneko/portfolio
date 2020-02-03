@@ -9,6 +9,7 @@ class MapController extends Controller
 {
     public function index()
     {
+        $maps = \Config::get('maps');
         $markers = Mountain::select([
             'name',
             'date',
@@ -19,7 +20,8 @@ class MapController extends Controller
         ])->orderBy('date', 'asc')->get();
         return [
             'api_key' => env('GOOGLE_API_KEY'),
-            'options' => \Config::get('maps'),
+            'marker_zoom' => $maps['marker_zoom'],
+            'options' => $maps['options'],
             'markers' => $markers
         ];
     }

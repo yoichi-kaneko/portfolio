@@ -5,6 +5,7 @@ let marker = [];
 let infoWindow = [];
 let activeInfoWindow;
 let marker_count;
+let marker_zoom;
 
 function initGoogleMap()
 {
@@ -19,6 +20,7 @@ function initGoogleMap()
 }
 
 function renderGoogleMap(data) {
+    marker_zoom = data['marker_zoom'];
     let loader = new Loader(data['api_key']);
 
     loader.load().then(function (g) {
@@ -78,7 +80,7 @@ function showInfoWindow(index) {
     infoWindow[index].open(map, marker[index]); // 吹き出しの表示
     let position = marker[index].getPosition();
     map.panTo(position);
-    map.setZoom(8);
+    map.setZoom(marker_zoom);
     activeInfoWindow = infoWindow[index];
 }
 

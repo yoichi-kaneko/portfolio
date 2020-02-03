@@ -12,7 +12,7 @@
     </ul>
     <br />
     Powered By: <a href="https://mapicons.mapsmarker.com" target="_blank"><img src="{{ asset('/image/miclogo-88x31.gif') }}"></a>
-    <div id="google_map" style="min-height: 400px;"></div>
+    <div id="google_map" style="min-height: 380px;"></div>
 </div>
 
 <script id="map_window" type="text/x-jsrender">
