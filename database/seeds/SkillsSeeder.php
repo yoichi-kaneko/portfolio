@@ -64,8 +64,8 @@ class SkillsSeeder extends Seeder
             [
                 'type' => 'program',
                 'name' => 'Laravel',
-                'grade' => 2,
-                'description' => '1年未満'
+                'grade' => 3,
+                'description' => '1年'
             ],
             [
                 'type' => 'program',
