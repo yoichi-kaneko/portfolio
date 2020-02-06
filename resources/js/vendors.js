@@ -1,6 +1,7 @@
 global.$ = global.jQuery = require('jquery');
 global.Isotope = require('isotope-layout');
 global.moment = require('moment');
+global.map = require('./map_functions');
 
 require('linkifyjs');
 require('infieldLabel');
