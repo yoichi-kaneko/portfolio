@@ -48,9 +48,4 @@ class PageController extends Controller
             'freetimes' => $freetimes
         ]);
     }
-
-    public function contact()
-    {
-        return view('page/contact');
-    }
 }
