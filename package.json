@@ -40,6 +40,8 @@
         "moment": "^2.24.0",
         "nivo-slider": "^3.2.0",
         "qtip2": "^3.0.3",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0",
         "serialize-javascript": "^2.1.2"
     }
 }
