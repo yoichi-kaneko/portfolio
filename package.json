@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
+        "acorn": "^7.1.1",
         "caroufredsel": "^6.2.1",
         "fancybox": "^3.0.1",
         "glob": "^7.1.6",
@@ -37,6 +38,7 @@
         "jscrollpane": "^2.2.1",
         "jsrender": "^1.0.6",
         "linkifyjs": "^2.1.9",
+        "minimist": "^1.2.5",
         "moment": "^2.24.0",
         "nivo-slider": "^3.2.0",
         "qtip2": "^3.0.3",
