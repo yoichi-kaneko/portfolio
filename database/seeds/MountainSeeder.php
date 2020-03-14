@@ -90,6 +90,14 @@ class MountainSeeder extends Seeder
                 'longitude' => 140.098545,
                 'description' => '御幸ヶ原コースから男体山登頂',
             ],
+            [
+                'name' => '伊吹山',
+                'date' => '2020-03-07',
+                'url' => 'https://yamap.com/activities/5777584',
+                'latitude' => 35.417902,
+                'longitude' => 136.406517,
+                'description' => '上野口から登頂',
+            ],
         ];
     }
 }

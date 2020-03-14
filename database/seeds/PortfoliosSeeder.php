@@ -58,6 +58,11 @@ class PortfoliosSeeder extends Seeder
                 'name' => '賃貸住宅シミュレーション開発',
                 'visible' => true
             ],
+            [
+                'code' => 'iam_available',
+                'name' => 'カレンダースケジュールサイト',
+                'visible' => true
+            ],
         ];
     }
 }

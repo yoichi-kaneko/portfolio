@@ -17,16 +17,16 @@
     <h3>使用ツール・言語</h3>
     <ul>
         <li>
-            PHP5
+            PHP7
         </li>
         <li>
-            Laravel 5.8
+            Laravel 6
         </li>
         <li>
-            MySQL5
+            MySQL8
         </li>
         <li>
-            jQuery
+            jQuery 特に Chart.js
         </li>
         <li>
             AWS
