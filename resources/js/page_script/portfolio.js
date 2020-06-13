@@ -66,6 +66,8 @@ $('.fancybox-iframe').fancybox(
     {
         type: 'ajax',
         arrows: false,
+        autoSize: false,
+        width: '85%',
         afterShow: function() {
             if (analytics_code) {
                 gtag('event', $(this).attr('href'), {'event_category': 'load_portfolio'});

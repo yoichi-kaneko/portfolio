@@ -23,7 +23,7 @@ class SkillsSeeder extends Seeder
                 'type' => 'program',
                 'name' => 'PHP',
                 'grade' => 5,
-                'description' => '10年'
+                'description' => '11年'
             ],
             [
                 'type' => 'program',
@@ -35,7 +35,7 @@ class SkillsSeeder extends Seeder
                 'type' => 'program',
                 'name' => 'MySQL',
                 'grade' => 5,
-                'description' => '9年'
+                'description' => '10年'
             ],
             [
                 'type' => 'program',
