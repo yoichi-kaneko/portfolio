@@ -35,14 +35,6 @@ class MountainSeeder extends Seeder
                 'description' => 'ヤビツ峠より塔ノ岳まで',
             ],
             [
-                'name' => '天城山',
-                'date' => '2019-05-12',
-                'url' => null,
-                'latitude' => 34.862816,
-                'longitude' => 139.001799,
-                'description' => '縦走コース完走',
-            ],
-            [
                 'name' => '谷川岳',
                 'date' => '2019-06-22',
                 'url' => 'https://yamap.com/activities/3948351',
@@ -97,6 +89,38 @@ class MountainSeeder extends Seeder
                 'latitude' => 35.417902,
                 'longitude' => 136.406517,
                 'description' => '上野口から登頂',
+            ],
+            [
+                'name' => '天城山',
+                'date' => '2020-07-31',
+                'url' => 'https://yamap.com/activities/7074900',
+                'latitude' => 34.862816,
+                'longitude' => 139.001799,
+                'description' => '縦走コース完走',
+            ],
+            [
+                'name' => '那須岳',
+                'date' => '2020-08-02',
+                'url' => 'https://yamap.com/activities/7116380',
+                'latitude' => 37.125542,
+                'longitude' => 139.963696,
+                'description' => '茶臼岳登頂',
+            ],
+            [
+                'name' => '安達太良山',
+                'date' => '2020-08-10',
+                'url' => 'https://yamap.com/activities/7237087',
+                'latitude' => 37.621140,
+                'longitude' => 140.287824,
+                'description' => '岳温泉から安達太良山まで往復',
+            ],
+            [
+                'name' => '磐梯山',
+                'date' => '2020-08-12',
+                'url' => 'https://yamap.com/activities/7256586',
+                'latitude' => 37.600961,
+                'longitude' => 140.072210,
+                'description' => '裏磐梯登山口から猪苗代登山口まで縦走',
             ],
         ];
     }
