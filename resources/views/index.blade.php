@@ -25,9 +25,9 @@
     <script src="{{ mix('js/cascade.js') }}"></script>
 @if ($is_production)
     <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143010188-1"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ Config::get('const.analytics_code') }}"></script>
         <script>
-            const analytics_code = 'UA-143010188-1';
+            const analytics_code = '{{ Config::get('const.analytics_code') }}';
             window.dataLayer = window.dataLayer || [];
 
             function gtag() {
