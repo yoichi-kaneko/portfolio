@@ -116,7 +116,7 @@ class MountainSeeder extends Seeder
             ],
             [
                 'name' => '磐梯山',
-                'date' => '2020-08-12',
+                'date' => '2020-08-11',
                 'url' => 'https://yamap.com/activities/7256586',
                 'latitude' => 37.600961,
                 'longitude' => 140.072210,

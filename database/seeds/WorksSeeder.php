@@ -67,6 +67,13 @@ class WorksSeeder extends Seeder
                 'job_type' => '業務委託',
                 'description' => '学校教育向けクラウドサービスの開発に従事'
             ],
+            [
+                'name' => '筑波大学',
+                'date_from' => '2019-09-01',
+                'date_to' => null,
+                'job_type' => '受託開発',
+                'description' => '大学の研究室のシミュレーション開発に従事'
+            ],
         ];
     }
 }
