@@ -20,7 +20,6 @@ class SkillsTable extends Migration
             $table->integer('grade');
             $table->string('description', 64);
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

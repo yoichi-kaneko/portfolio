@@ -19,7 +19,6 @@ class CreatePhotosTable extends Migration
             $table->string('name', 30);
             $table->boolean('visible')->default(true);
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

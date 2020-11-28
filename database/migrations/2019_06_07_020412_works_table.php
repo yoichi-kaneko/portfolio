@@ -21,7 +21,6 @@ class WorksTable extends Migration
             $table->string('job_type', 20);
             $table->text('description')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

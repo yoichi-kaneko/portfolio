@@ -16,7 +16,6 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $description
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null $deleted_at
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Mountain newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Mountain newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Mountain query()

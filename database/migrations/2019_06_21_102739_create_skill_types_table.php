@@ -18,7 +18,6 @@ class CreateSkillTypesTable extends Migration
             $table->string('code', 30);
             $table->string('name', 30);
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

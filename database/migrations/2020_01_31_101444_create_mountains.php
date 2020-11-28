@@ -22,7 +22,6 @@ class CreateMountains extends Migration
             $table->decimal('longitude', 9, 6);
             $table->text('description')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
