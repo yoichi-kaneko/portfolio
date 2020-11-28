@@ -63,9 +63,16 @@ class WorksSeeder extends Seeder
             [
                 'name' => 'Classi株式会社',
                 'date_from' => '2018-11-01',
-                'date_to' => null,
+                'date_to' => '2020-09-30',
                 'job_type' => '業務委託',
                 'description' => '学校教育向けクラウドサービスの開発に従事'
+            ],
+            [
+                'name' => '株式会社カオナビ',
+                'date_from' => '2020-10-01',
+                'date_to' => null,
+                'job_type' => '業務委託',
+                'description' => '人事開発システムの開発に従事'
             ],
             [
                 'name' => '筑波大学',

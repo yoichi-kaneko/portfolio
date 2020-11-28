@@ -23,7 +23,7 @@ class SkillsSeeder extends Seeder
                 'type' => 'program',
                 'name' => 'PHP',
                 'grade' => 5,
-                'description' => '11年'
+                'description' => '12年'
             ],
             [
                 'type' => 'program',
