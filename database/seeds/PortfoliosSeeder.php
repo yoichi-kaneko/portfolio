@@ -63,6 +63,11 @@ class PortfoliosSeeder extends Seeder
                 'name' => 'カレンダースケジュールサイト',
                 'visible' => true
             ],
+            [
+                'code' => 'spgame',
+                'name' => 'SPゲームのシミュレーション開発',
+                'visible' => true
+            ],
         ];
     }
 }

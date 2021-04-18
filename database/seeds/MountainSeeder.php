@@ -27,14 +27,6 @@ class MountainSeeder extends Seeder
                 'description' => '山頂手前、室堂ビジターセンターまで',
             ],
             [
-                'name' => '丹沢山',
-                'date' => '2018-12-01',
-                'url' => null,
-                'latitude' => 35.454034,
-                'longitude' => 139.163269,
-                'description' => 'ヤビツ峠より塔ノ岳まで',
-            ],
-            [
                 'name' => '谷川岳',
                 'date' => '2019-06-22',
                 'url' => 'https://yamap.com/activities/3948351',
@@ -177,6 +169,22 @@ class MountainSeeder extends Seeder
                 'latitude' => 35.855471,
                 'longitude' => 138.944016,
                 'description' => '鴨沢登山口から往復',
+            ],
+            [
+                'name' => '丹沢山',
+                'date' => '2021-01-09',
+                'url' => 'https://yamap.com/activities/9384242',
+                'latitude' => 35.454034,
+                'longitude' => 139.163269,
+                'description' => '西丹沢から日帰りで主稜縦走',
+            ],
+            [
+                'name' => '九重山',
+                'date' => '2021-03-22',
+                'url' => 'https://yamap.com/activities/10349140',
+                'latitude' => 33.081828,
+                'longitude' => 131.240728,
+                'description' => '三俣山、中岳、久住山など縦走',
             ],
         ];
     }
