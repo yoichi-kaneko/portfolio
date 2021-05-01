@@ -186,6 +186,14 @@ class MountainSeeder extends Seeder
                 'longitude' => 131.240728,
                 'description' => '三俣山、中岳、久住山など縦走',
             ],
+            [
+                'name' => '霧島山',
+                'date' => '2021-04-26',
+                'url' => 'https://yamap.com/activities/10870021',
+                'latitude' => 31.933964,
+                'longitude' => 130.861438,
+                'description' => '大幡山から韓国岳に向けて縦走',
+            ],
         ];
     }
 }
