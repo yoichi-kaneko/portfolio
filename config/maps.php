@@ -6,7 +6,7 @@ return [
             'lat' => 36.931689,
             'lng' => 136.242343,
         ],
-        'zoom' => 6,
+        'zoom' => 4,
         'mapTypeId' => 'hybrid',
         'mapTypeControl' => false,
         'scaleControl' => true,
