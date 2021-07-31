@@ -68,6 +68,11 @@ class PortfoliosSeeder extends Seeder
                 'name' => 'SPゲームのシミュレーション開発',
                 'visible' => true
             ],
+            [
+                'code' => 'school',
+                'name' => 'プログラミングスクールのサポート',
+                'visible' => true
+            ],
         ];
     }
 }
