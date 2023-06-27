@@ -23,7 +23,7 @@
         "sass-loader": "^12.4.0",
         "vue": "^2.6.12",
         "vue-template-compiler": "^2.6.12",
-        "webpack": "^5.65.0"
+        "webpack": "^5.76.0"
     },
     "dependencies": {
         "acorn": "^8.0.4",
