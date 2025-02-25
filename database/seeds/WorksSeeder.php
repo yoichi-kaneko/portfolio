@@ -70,9 +70,16 @@ class WorksSeeder extends Seeder
             [
                 'name' => '株式会社カオナビ',
                 'date_from' => '2020-10-01',
-                'date_to' => null,
+                'date_to' => '2024-02-29',
                 'job_type' => '業務委託',
                 'description' => '人事開発システムの開発に従事'
+            ],
+            [
+                'name' => '株式会社スマレジ',
+                'date_from' => '2024-04-12',
+                'date_to' => null,
+                'job_type' => '業務委託',
+                'description' => '勤怠管理システムの開発に従事'
             ],
             [
                 'name' => '筑波大学',

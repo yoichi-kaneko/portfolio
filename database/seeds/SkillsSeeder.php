@@ -23,7 +23,7 @@ class SkillsSeeder extends Seeder
                 'type' => 'program',
                 'name' => 'PHP',
                 'grade' => 5,
-                'description' => '12年'
+                'description' => '15年'
             ],
             [
                 'type' => 'program',
@@ -39,15 +39,15 @@ class SkillsSeeder extends Seeder
             ],
             [
                 'type' => 'program',
-                'name' => 'jQuery',
-                'grade' => 5,
-                'description' => '7年'
+                'name' => 'TypeScript',
+                'grade' => 3,
+                'description' => '3年'
             ],
             [
                 'type' => 'program',
                 'name' => 'CakePHP',
-                'grade' => 3,
-                'description' => '2年'
+                'grade' => 4,
+                'description' => '3年'
             ],
             [
                 'type' => 'program',
@@ -64,8 +64,8 @@ class SkillsSeeder extends Seeder
             [
                 'type' => 'program',
                 'name' => 'Laravel',
-                'grade' => 3,
-                'description' => '2年'
+                'grade' => 5,
+                'description' => '5年'
             ],
             [
                 'type' => 'program',
@@ -83,7 +83,25 @@ class SkillsSeeder extends Seeder
                 'type' => 'program',
                 'name' => 'GitHub',
                 'grade' => 3,
-                'description' => '2年'
+                'description' => '6年'
+            ],
+            [
+                'type' => 'program',
+                'name' => 'AWS',
+                'grade' => 3,
+                'description' => '6年'
+            ],
+            [
+                'type' => 'program',
+                'name' => 'Docker',
+                'grade' => 3,
+                'description' => '6年'
+            ],
+            [
+                'type' => 'program',
+                'name' => 'jQuery',
+                'grade' => 5,
+                'description' => '8年'
             ],
             [
                 'type' => 'position',
@@ -135,9 +153,9 @@ class SkillsSeeder extends Seeder
             ],
             [
                 'type' => 'for_a_while',
-                'name' => 'AWS',
-                'grade' => 2,
-                'description' => '2年'
+                'name' => 'Go',
+                'grade' => 1,
+                'description' => '1年未満'
             ],
         ];
     }
