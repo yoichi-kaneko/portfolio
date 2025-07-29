@@ -41,7 +41,7 @@
         "jscrollpane": "^2.2.2",
         "jsrender": "^1.0.9",
         "kind-of": "^6.0.3",
-        "linkifyjs": "^2.1.9",
+        "linkifyjs": "^4.3.2",
         "minimist": "^1.2.6",
         "moment": "^2.29.4",
         "nivo-slider": "^3.2.0",
